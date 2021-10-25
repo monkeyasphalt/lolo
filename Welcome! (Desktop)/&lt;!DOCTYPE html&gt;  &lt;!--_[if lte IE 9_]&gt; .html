@@ -1,0 +1,502 @@
+
+				<!DOCTYPE html>
+				<html>
+					<head>
+						<meta charset="UTF-8">
+						<meta name="viewport" content="width=device-width, initial-scale=1" />
+						<link rel="stylesheet" href="pluginAssets/katex/katex.css"><script type="application/javascript" src="pluginAssets/mermaid/mermaid.min.js"></script><script type="application/javascript" src="pluginAssets/mermaid/mermaid_render.js"></script><link rel="stylesheet" href="pluginAssets/highlight.js/atom-one-light.css">
+						<title>&amp;lt;!DOCTYPE html&amp;gt;  &amp;lt;!--\[if lte IE 9\]&amp;gt;     &amp;lt;html class=&quot;no-js ie&quot;&amp;</title>
+					</head>
+					<body>
+						<div class="exported-note"><div class="exported-note-title">&amp;lt;!DOCTYPE html&amp;gt;  &amp;lt;!--\[if lte IE 9\]&amp;gt;     &amp;lt;html class=&quot;no-js ie&quot;&amp;</div>
+
+<style>
+		/* https://necolas.github.io/normalize.css/ */
+		html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+		article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}
+		pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}
+		b,strong{font-weight:bolder}small{font-size:80%}img{border-style:none}
+
+		body {
+			font-size: 15px;
+			color: #32373F;
+			word-wrap: break-word;
+			line-height: 1.6em;
+			background-color: #ffffff;
+			font-family: 'Avenir', 'Arial', sans-serif;
+			padding-bottom: 0px;
+			padding-top: 0px;
+		}
+		strong {
+			color: #000000;
+		}
+		kbd {
+			border: 1px solid rgb(220, 220, 220);
+			box-shadow: inset 0 -1px 0 rgb(220, 220, 220);
+			padding: 2px 4px;
+			border-radius: 3px;
+			background-color: rgb(243, 243, 243);
+		}
+		::-webkit-scrollbar {
+			width: 7px;
+			height: 7px;
+		}
+		::-webkit-scrollbar-corner {
+			background: none;
+		}
+		::-webkit-scrollbar-track {
+			border: none;
+		}
+		::-webkit-scrollbar-thumb {
+			background: rgba(100, 100, 100, 0.3); 
+			border-radius: 5px;
+		}
+		::-webkit-scrollbar-track:hover {
+			background: rgba(0, 0, 0, 0.1); 
+		}
+		::-webkit-scrollbar-thumb:hover {
+			background: rgba(100, 100, 100, 0.7); 
+		}
+
+		
+
+		/* Remove top padding and margin from first child so that top of rendered text is aligned to top of text editor text */
+
+		#rendered-md > h1:first-child,
+		#rendered-md > h2:first-child,
+		#rendered-md > h3:first-child,
+		#rendered-md > h4:first-child,
+		#rendered-md > ul:first-child,
+		#rendered-md > ol:first-child,
+		#rendered-md > table:first-child,
+		#rendered-md > blockquote:first-child,
+		#rendered-md > img:first-child,
+		#rendered-md > p:first-child {
+			margin-top: 0;
+			padding-top: 0;
+		}
+		
+		p, h1, h2, h3, h4, h5, h6, ul, table {
+			margin-top: .6em;
+			margin-bottom: 1.35em;
+
+			/*
+				Adds support for RTL text in the note body. It automatically detects the direction using the content.
+				Issue: https://github.com/laurent22/joplin/issues/3991
+			*/
+			unicode-bidi: plaintext;
+		}
+
+		h1, h2, h3, h4, h5, h6, ul, table {
+			margin-bottom: 0.65em;
+		}
+
+		h1, h2, h3, h4, h5, h6 {
+			line-height: 1.5em;
+		}
+		h1 {
+			font-size: 1.5em;
+			font-weight: bold;
+			border-bottom: 1px solid #dddddd;
+			padding-bottom: .3em;
+		}
+		h2 {
+			font-size: 1.3em;
+			font-weight: bold;
+			padding-bottom: .1em; */
+		}
+		h3 {
+			font-size: 1.1em;
+		}
+		h4, h5, h6 {
+			font-size: 1em;
+			font-weight: bold;
+		}
+
+		.exported-note-title {
+			font-size: 2em;
+			font-weight: bold;
+			margin-bottom: 0.8em;
+			line-height: 1.5em;
+			padding-bottom: .35em;
+			border-bottom: 1px solid #dddddd;
+		}
+
+		a {
+			color: #155BDA;
+		}
+		ul, ol {
+			padding-left: 0;
+			margin-left: 1.7em;
+		}
+		li {
+			margin-bottom: .4em;
+		}
+		li p {
+			margin-top: 0.2em;
+			margin-bottom: 0;
+		}
+
+		.resource-icon {
+			display: inline-block;
+			position: relative;
+			top: 0.3em;
+			text-decoration: none;
+			width: 1.2em;
+			height: 1.4em;
+			margin-right: 0.4em;
+			background-color:  #155BDA;
+		}
+    /* These icons are obtained from the wonderful ForkAwesome project by copying the src svgs 
+     * into the css classes below.
+     * svgs are obtained from https://github.com/ForkAwesome/Fork-Awesome/tree/master/src/icons/svg
+     * instead of the svg width, height property you must use a viewbox here, 0 0 1536 1792 is typically the actual size of the icon
+     * each line begins with the pre-amble -webkit-mask: url("data:image/svg+xml;utf8,
+     * and of course finishes with ");
+     * to precvent artifacts it is also necessary to include -webkit-mask-repeat: no-repeat;
+     * on the following line
+     * */
+		.fa-joplin {
+			/* Awesome Font file */
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M373.834 128C168.227 128 0 296.223 0 501.834v788.336C0 1495.778 168.227 1664 373.834 1664h788.336c205.608 0 373.83-168.222 373.83-373.83V501.834C1536 296.224 1367.778 128 1162.17 128zm397.222 205.431h417.424a7.132 7.132 0 0 1 7.132 7.133v132.552c0 4.461-3.619 8.073-8.077 8.073h-57.23c-24.168 0-43.768 19.338-44.284 43.374v2.377h-.017v136.191h-.053l-.466 509.375c-5.02 77.667-39.222 149.056-96.324 201.046-60.28 54.834-141.948 85.017-229.962 85.017-12.45 0-25.208-.61-37.907-1.785-92.157-8.682-181.494-48.601-251.662-112.438-71.99-65.517-117.147-150.03-127.164-238-11.226-98.763 23.42-192.783 95.045-257.937 81.99-74.637 198.185-101.768 316.613-75.704 5.574 1.227 9.55 6.282 9.55 11.997v199.52c-.199 2.625-1.481 6.599-8.183 2.896-.663-.365-1.194-.511-1.653-.531-21.987-10.587-45.159-17.57-68.559-19.916-.38-.04-.757-.124-1.138-.163-.537-.048-1.034-.033-1.556-.075-4.13-.354-8.183-.517-12.203-.58-.87-.011-1.771-.127-2.641-.127-.486 0-.951.05-1.437.057-1.464.011-2.886.115-4.33.163-2.76.102-5.497.211-8.182.448-.273.024-.547.07-.835.097-25.509 2.4-47.864 11.104-65.012 25.47-.954.802-1.974 1.53-2.9 2.36a1.34 1.34 0 0 1-.168.146c-23.96 21.8-34.881 53.872-30.726 90.316 4.62 40.737 26.94 81.156 62.841 113.823 35.908 32.67 80.335 52.977 125.113 57.186 35.118 3.36 66.547-3.919 89.899-20.461a97.255 97.255 0 0 0 9.365-7.501c2.925-2.661 5.569-5.5 8.086-8.416.3-.348.672-.673.975-1.024 8.253-9.864 14.222-21.067 17.996-33.148.639-2.034 1.051-4.148 1.564-6.227.381-1.563.81-3.106 1.112-4.693.555-2.784.923-5.632 1.253-8.49.086-.709.183-1.414.237-2.128.492-4.893.693-9.858.55-14.91h.013V521.623c-2.01-22.626-20.78-40.434-43.928-40.434h-57.23a8.071 8.071 0 0 1-8.077-8.073V340.564a7.132 7.132 0 0 1 7.136-7.133z'/></svg>");
+		}
+		.fa-file-image {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-128-448v320H256v-192l192-192 128 128 384-384zm-832-192c-106 0-192-86-192-192s86-192 192-192 192 86 192 192-86 192-192 192z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-pdf {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-514-593c25 20 53 38 84 56 42-5 81-7 117-7 67 0 152 8 177 49 7 10 13 28 2 52-1 1-2 3-3 4v1c-3 18-18 38-71 38-64 0-161-29-245-73-139 15-285 46-392 83-103 176-182 262-242 262-10 0-19-2-28-7l-24-12c-3-1-4-3-6-5-5-5-9-16-6-36 10-46 64-123 188-188 8-5 18-2 23 6 1 1 2 3 2 4 31-51 67-116 107-197 45-90 80-178 104-262-32-109-42-221-24-287 7-25 22-40 42-40h22c15 0 27 5 35 15 12 14 15 36 9 68-1 3-2 6-4 8 1 3 1 5 1 8v30c-1 63-2 123-14 192 35 105 87 190 146 238zm-576 411c30-14 73-57 137-158-75 58-122 124-137 158zm398-920c-10 28-10 76-2 132 3-16 5-31 7-44 2-17 5-31 7-43 1-3 2-5 4-8-1-1-1-3-2-5-1-18-7-29-13-36 0 2-1 3-1 4zm-124 661c88-35 186-63 284-81-10-8-20-15-29-23-49-43-93-103-127-176-19 61-47 126-83 197-15 28-30 56-45 83zm646-16c-5-5-31-24-140-24 49 18 94 28 124 28 9 0 14 0 18-1 0-1-1-2-2-3z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-word {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM233 768v107h70l164 661h159l128-485c5-15 8-30 10-46 1-8 2-16 2-24h4l3 24c3 14 4 30 9 46l128 485h159l164-661h70V768h-300v107h90l-99 438c-4 16-6 33-7 46l-2 21h-4c0-6-2-14-3-21-3-13-5-30-9-46L825 768H711l-144 545c-4 16-5 33-8 46l-4 21h-4l-2-21c-1-13-3-30-7-46l-99-438h90V768H233z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-powerpoint {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-992-234v106h327v-106h-93v-167h137c43 0 82-2 118-15 90-31 146-124 146-233s-54-193-137-228c-38-15-84-19-130-19H416v107h92v555h-92zm353-280H650V882h120c35 0 62 6 83 18 36 21 56 62 56 115 0 56-20 99-62 120-21 10-47 15-78 15z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-excel {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zm-979-234v106h281v-106h-75l103-161c12-19 18-34 21-34h2c1 4 3 7 5 10 4 8 10 14 17 24l107 161h-76v106h291v-106h-68l-192-273 195-282h67V768H828v107h74l-103 159c-12 19-21 34-21 33h-2c-1-4-3-7-5-10-4-7-9-14-17-23L648 875h76V768H434v107h68l189 272-194 283h-68z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-audio {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM620 850c12 5 20 17 20 30v544c0 13-8 25-20 30-4 1-8 2-12 2-8 0-16-3-23-9l-166-167H288c-18 0-32-14-32-32v-192c0-18 14-32 32-32h131l166-167c10-9 23-12 35-7zm417 689c19 0 37-8 50-24 83-102 129-231 129-363s-46-261-129-363c-22-28-63-32-90-10-28 23-32 63-9 91 65 80 100 178 100 282s-35 202-100 282c-23 28-19 68 9 90 12 10 26 15 40 15zm-211-148c17 0 34-7 47-20 56-60 87-137 87-219s-31-159-87-219c-24-26-65-27-91-3-25 24-27 65-2 91 33 36 52 82 52 131s-19 95-52 131c-25 26-23 67 2 91 13 11 29 17 44 17z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-video {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM768 768c70 0 128 58 128 128v384c0 70-58 128-128 128H384c-70 0-128-58-128-128V896c0-70 58-128 128-128h384zm492 2c12 5 20 17 20 30v576c0 13-8 25-20 30-4 1-8 2-12 2-8 0-17-3-23-9l-265-266v-90l265-266c6-6 15-9 23-9 4 0 8 1 12 2z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-archive {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M640 384V256H512v128h128zm128 128V384H640v128h128zM640 640V512H512v128h128zm128 128V640H640v128h128zm700-388c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H768v128H640V128H128v1536h1280zM781 943c85 287 107 349 107 349 5 17 8 34 8 52 0 111-108 192-256 192s-256-81-256-192c0-18 3-35 8-52 0 0 21-62 120-396V768h128v128h79c29 0 54 19 62 47zm-141 465c71 0 128-29 128-64s-57-64-128-64-128 29-128 64 57 64 128 64z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-code {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM480 768c11-14 31-17 45-6l51 38c14 11 17 31 6 45l-182 243 182 243c11 14 8 34-6 45l-51 38c-14 11-34 8-45-6l-226-301c-8-11-8-27 0-38zm802 301c8 11 8 27 0 38l-226 301c-11 14-31 17-45 6l-51-38c-14-11-17-31-6-45l182-243-182-243c-11-14-8-34 6-45l51-38c14-11 34-8 45 6zm-620 461c-18-3-29-20-26-37l138-831c3-18 20-29 37-26l63 10c18 3 29 20 26 37l-138 831c-3 18-20 29-37 26z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file-alt, .fa-file-csv {
+      /* fork-awesome doesn't have csv so we use the text icon */
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280zM384 800c0-18 14-32 32-32h704c18 0 32 14 32 32v64c0 18-14 32-32 32H416c-18 0-32-14-32-32v-64zm736 224c18 0 32 14 32 32v64c0 18-14 32-32 32H416c-18 0-32-14-32-32v-64c0-18 14-32 32-32h704zm0 256c18 0 32 14 32 32v64c0 18-14 32-32 32H416c-18 0-32-14-32-32v-64c0-18 14-32 32-32h704z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		.fa-file {
+			-webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1536 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1468 380c37 37 68 111 68 164v1152c0 53-43 96-96 96H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h896c53 0 127 31 164 68zm-444-244v376h376c-6-17-15-34-22-41l-313-313c-7-7-24-16-41-22zm384 1528V640H992c-53 0-96-43-96-96V128H128v1536h1280z'/></svg>");
+      -webkit-mask-repeat: no-repeat;
+		}
+		blockquote {
+			border-left: 4px solid rgb(220, 220, 220);
+			padding-left: 1.2em;
+			margin-left: 0;
+			opacity: 0.7;
+		}
+
+		.jop-tinymce table,
+		table {
+			text-align: left;
+			border-collapse: collapse;
+			border: 1px solid rgb(220, 220, 220);
+			background-color: #ffffff;
+		}
+
+		.jop-tinymce table td, .jop-tinymce table th,
+		table td, th {
+			text-align: left;
+			padding: .5em 1em .5em 1em;
+			font-size: 15;
+			color: #32373F;
+			font-family: 'Avenir', 'Arial', sans-serif;
+		}
+
+		.jop-tinymce table td,
+		table td {
+			border: 1px solid rgb(220, 220, 220);
+		}
+
+		.jop-tinymce table th,
+		table th {
+			border: 1px solid rgb(220, 220, 220);
+			border-bottom: 2px solid rgb(220, 220, 220);
+			background-color: rgb(247, 247, 247);
+		}
+
+		.jop-tinymce table tr:nth-child(even),
+		table tr:nth-child(even) {
+			background-color: rgb(247, 247, 247);
+		}
+
+		.jop-tinymce table tr:hover,
+		table tr:hover {
+			background-color: #e5e5e5;
+		}
+
+		hr {
+			border: none;
+			border-bottom: 2px solid #dddddd;
+		}
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+		
+		.inline-code,
+		.mce-content-body code {
+			border: 1px solid rgb(220, 220, 220);
+			background-color: rgb(243, 243, 243);
+			padding-right: .2em;
+			padding-left: .2em;
+			border-radius: .25em;
+			color: rgb(0,0,0);
+			font-size: .9em;
+		}
+
+		.highlighted-keyword {
+			background-color: #F3B717;
+			color: black;
+		}
+
+		.not-loaded-resource img {
+			width: 1.15em;
+			height: 1.15em;
+			background: white;
+			padding: 2px !important;
+			border-radius: 2px;
+			box-shadow: 0 1px 3px #000000aa;
+		}
+
+		a.not-loaded-resource img {
+			margin-right: .2em;
+		}
+
+		a.not-loaded-resource {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+		}
+
+		.md-checkbox input[type=checkbox]:checked {
+			opacity: 0.7;
+		}
+
+		.jop-tinymce ul.joplin-checklist .checked,
+		.md-checkbox .checkbox-label-checked {
+			opacity: 0.5;
+		}
+
+		.exported-note {
+			padding: 1em;
+		}
+
+		.joplin-editable .joplin-source {
+			display: none;
+		}
+
+		mark {
+			background: #F7D26E;
+			color: black;
+		}
+
+		/* =============================================== */
+		/* For TinyMCE */
+		/* =============================================== */
+
+		.mce-content-body {
+			/* Note: we give a bit more padding at the bottom, to allow scrolling past the end of the document */
+			padding: 5px 10px 10em 0;
+		}
+
+		/*
+		.mce-content-body code {
+			background-color: transparent;
+		}
+		*/
+
+		.mce-content-body [data-mce-selected=inline-boundary] {
+			background-color: transparent;
+		}
+
+		.mce-content-body .joplin-editable {
+			cursor: pointer !important;
+		}
+
+		.mce-content-body.mce-content-readonly {
+			opacity: 0.5;
+		}
+
+		/* We need that to make sure click events have the A has a target */
+		.katex a span {
+			pointer-events: none;
+		}
+
+		.media-player {
+			width: 100%;
+			margin-top: 10px;
+		}
+
+		.media-player.media-pdf {
+			min-height: 100vh;
+		}
+
+		/* Clear the CODE style if the element is within a joplin-editable block */
+		.mce-content-body .joplin-editable code {
+			border: none;
+			background: none;
+			padding: 0;
+			color: inherit;
+			font-size: inherit;
+		}
+
+		/* =============================================== */
+		/* For TinyMCE */
+		/* =============================================== */
+
+		@media print {
+			body {
+				height: auto !important;
+			}
+
+			pre {
+				white-space: pre-wrap;
+			}
+
+			.code, .inline-code {
+				border: 1px solid #CBCBCB;
+			}
+
+			#joplin-container-content {
+				/* The height of the content is set dynamically by JavaScript (in updateBodyHeight) to go
+				   around various issues related to scrolling. However when printing we don't want this
+				   fixed size as that would crop the content. So we set it to auto here. "important" is
+				   needed to override the style set by JavaScript at the element-level. */
+				height: auto !important;
+			}
+		}
+	
+
+				/*
+					FOR THE MARKDOWN EDITOR
+				*/
+
+				/* Remove the indentation from the checkboxes at the root of the document
+				   (otherwise they are too far right), but keep it for their children to allow
+				   nested lists. Make sure this value matches the UL margin. */
+
+				li.md-checkbox {
+					list-style-type: none;
+				}
+
+				li.md-checkbox input[type=checkbox] {
+					margin-left: -1.71em;
+					margin-right: 0.7em;
+				}
+				
+				ul.joplin-checklist {
+					list-style:none;
+				}
+
+				/*
+					FOR THE RICH TEXT EDITOR
+				*/
+
+				ul.joplin-checklist li::before {
+					content:"\f14a";
+					font-family:"Font Awesome 5 Free";
+					background-size: 16px 16px;
+					pointer-events: all;
+					cursor: pointer;
+					width: 1em;
+					height: 1em;
+					margin-left: -1.3em;
+					position: absolute;
+					color: #32373F;
+				}
+
+				.joplin-checklist li:not(.checked)::before {
+					content:"\f0c8";
+				}
+.mermaid { background-color: white; width: 640px; }</style><div id="rendered-md"><p>&lt;!DOCTYPE html&gt;  &lt;!--[if lte IE 9]&gt;     &lt;html class=&quot;no-js ie&quot;&gt; &lt;![endif]--&gt;  &lt;!--[if gt IE 9]&gt;&lt;!--&gt;  <html class="no-js jop-noMdConv">  &lt;!--&lt;![endif]--&gt;  <head class="jop-noMdConv">        <title class="jop-noMdConv">Wix Website Editor</title>    </script>  </script>   if (window.consentPolicyManager) {<br>
+window.consentPolicyManager.init({<br>
+baseUrl: window.location.origin,<br>
+consentPolicy: {&quot;functional&quot;:true,&quot;analytics&quot;:true,&quot;advertising&quot;:true,&quot;dataToThirdParty&quot;:true,&quot;essential&quot;:true}<br>
+});<br>
+} </script>   if (window.wixTagManager) {<br>
+window.wixTagManager.init(window.wixTagManager.HOST_NAMES.EDITOR, 'en');<br>
+} </script>  &lt;script<br>
+src=&quot;<a data-from-md title='view-source:https://browser.sentry-cdn.com/6.10.0/bundle.min.js' href='view-source:https://browser.sentry-cdn.com/6.10.0/bundle.min.js'>https://browser.sentry-cdn.com/6.10.0/bundle.min.js</a>&quot;<br>
+integrity=&quot;sha384-nsIkfmMh0uiqg+AwegHcT1SMiPNWnhZmjFDwTshLTxur6ZPNaGT8vwT+vHwI5Jag&quot;<br>
+crossorigin=&quot;anonymous&quot;</p>
+<blockquote>
+<p></script>   (function () {<br>
+function sendBeacon(url) {<br>
+var sent = false<br>
+try {<br>
+sent = navigator.sendBeacon(url)<br>
+} catch (e) {<br>
+}<br>
+if (!sent) {<br>
+(new Image()).src = url<br>
+}<br>
+}<br>
+var urlParams = new URLSearchParams(window.location.search);<br>
+var origin = 'bolt' ;<br>
+var fedOpsAppName = 'santa-editor';<br>
+var editTypeToReport = 'none';<br>
+var editorSessionIdForFedsOps = 'd594528c-f10a-4d53-bda0-ce0c2b3259fc';<br>
+var fedopsParams = '&amp;msid=df0789af-1e58-4920-8bab-6e54fb5a4b6d&amp;uuid=f4c2280a-7348-4dcf-8205-0fcbfa35314b';<br>
+var is_rollout = 0;<br>
+window.fedops = window.fedops || {};<br>
+window.fedops.apps = window.fedops.apps || {};<br>
+window.fedops.apps[fedOpsAppName] = { startLoadTime: window.performance &amp;&amp; window.performance.now &amp;&amp; window.performance.now() };<br>
+window.loggerModel = {<br>
+is_rollout: is_rollout,<br>
+origin: origin,<br>
+editorSessionId: editorSessionIdForFedsOps,<br>
+fedOpsAppName: fedOpsAppName<br>
+};<br>
+var url = '<a data-from-md title='//frog.wix.com/editor-performance?src=72&amp;evid=41&amp;appName=' href='//frog.wix.com/editor-performance?src=72&amp;evid=41&amp;appName='>//frog.wix.com/editor-performance?src=72&amp;evid=41&amp;appName=</a>' + fedOpsAppName +<br>
+'&amp;is_rollout=' + is_rollout + '&amp;origin=' + origin +<br>
+'&amp;session_id=' + editorSessionIdForFedsOps + '&amp;type=' + editTypeToReport +<br>
+fedopsParams;<br>
+sendBeacon(url);<br>
+})(); </script>    </script>   var editorModel =  {&quot;siteHeader&quot;:{&quot;id&quot;:&quot;3fd7b001-a042-42fe-8da1-bf66fc9a8d66&quot;,&quot;userId&quot;:&quot;f4c2280a-7348-4dcf-8205-0fcbfa35314b&quot;,&quot;revision&quot;:6,&quot;version&quot;:1635162643310,&quot;applicationType&quot;:&quot;HtmlWeb&quot;,&quot;documentType&quot;:&quot;document&quot;,&quot;published&quot;:false,&quot;pageIdList&quot;:{&quot;masterPageJsonFileName&quot;:&quot;f4c228_4bbe243efbd5a42d0e502d719d664cdc_6.json&quot;,&quot;topology&quot;:[&quot;https:\/\/static.wix.com\/sites\/{filename}.z?v=3&quot;,&quot;https:\/\/fallback.wix.com\/wix-html-editor-pages-webapp\/pageForEditor\/{filename}?v=3&quot;],&quot;pages&quot;:[{&quot;pageId&quot;:&quot;shuz8&quot;,&quot;title&quot;:&quot;Cart Page&quot;,&quot;pageJsonFileName&quot;:&quot;f4c228_2a015b4f566a1813686309da95ca3a2e_3.json&quot;},{&quot;pageId&quot;:&quot;n8v9t&quot;,&quot;title&quot;:&quot;Thank You Page&quot;,&quot;pageJsonFileName&quot;:&quot;f4c228_31a3768642ca02b745812fd619c6ab8e_3.json&quot;},{&quot;pageId&quot;:&quot;c1dmp&quot;,&quot;title&quot;:&quot;HOME&quot;,&quot;pageJsonFileName&quot;:&quot;f4c228_75b21591bfa43862200353dbe6864253_6.json&quot;},{&quot;pageId&quot;:&quot;iy9co&quot;,&quot;title&quot;:&quot;My Wallet&quot;,&quot;pageJsonFileName&quot;:&quot;f4c228_71925c10585213f4b71c992babf1a8d9_3.json&quot;},{&quot;pageId&quot;:&quot;ekyil&quot;,&quot;title&quot;:&quot;My Addresses&quot;,&quot;pageJsonFileName&quot;:&quot;f4c228_99cdf78444819b2c9184931d89fe9607_3.json&quot;},{&quot;pageId&quot;:&quot;tarbv&quot;,&quot;title&quot;:&quot;Product Page&quot;,&quot;pageJsonFileName&quot;:&quot;f4c228_f21d8d423638e583577a4d5e7904e650_3.json&quot;},{&quot;pageId&quot;:&quot;eidr6&quot;,&quot;title&quot;:&quot;My Orders&quot;,&quot;pageJsonFileName&quot;:&quot;f4c228_31c209e5b4627cbb5a4433ea8567dc37_3.json&quot;},{&quot;pageId&quot;:&quot;yf2cb&quot;,&quot;title&quot;:&quot;Shop&quot;,&quot;pageJsonFileName&quot;:&quot;f4c228_2297b3b19a48bd5d3b2ebd6675b9c0d1_3.json&quot;},{&quot;pageId&quot;:&quot;r3rqm&quot;,&quot;title&quot;:&quot;My Account&quot;,&quot;pageJsonFileName&quot;:&quot;f4c228_23721e2fa7a54e0d8740ad4542679815_3.json&quot;},{&quot;pageId&quot;:&quot;g1oo4&quot;,&quot;title&quot;:&quot;Checkout&quot;,&quot;pageJsonFileName&quot;:&quot;f4c228_c94844843bf7ede7b8c80c2c77a4e2c5_3.json&quot;}]},&quot;originalTemplateId&quot;:&quot;cbf36d3a-49d0-41c2-9482-1bb58d5fdda3&quot;},&quot;metaSiteId&quot;:&quot;df0789af-1e58-4920-8bab-6e54fb5a4b6d&quot;,&quot;mode&quot;:&quot;nodebug&quot;,&quot;selenium&quot;:false,&quot;serviceMappings&quot;:{&quot;2&quot;:{&quot;idInMetaSite&quot;:2,&quot;idInApp&quot;:&quot;3fd7b001-a042-42fe-8da1-bf66fc9a8d66&quot;,&quot;applicationType&quot;:&quot;HtmlWeb&quot;}},&quot;metaSiteData&quot;:{&quot;siteName&quot;:&quot;my-site-1&quot;,&quot;title&quot;:&quot;&quot;,&quot;favicon&quot;:&quot;&quot;,&quot;metaTags&quot;:[{&quot;name&quot;:&quot;description&quot;,&quot;value&quot;:&quot;&quot;,&quot;property&quot;:false},{&quot;name&quot;:&quot;fb_admins_meta_tag&quot;,&quot;value&quot;:&quot;&quot;,&quot;property&quot;:false},{&quot;name&quot;:&quot;keywords&quot;,&quot;value&quot;:&quot;&quot;,&quot;property&quot;:false}],&quot;thumbnail&quot;:&quot;&quot;,&quot;premiumFeatures&quot;:[],&quot;indexable&quot;:true,&quot;suppressTrackingCookies&quot;:false,&quot;adaptiveMobileOn&quot;:true,&quot;externalUriMappings&quot;:[],&quot;ogImage&quot;:&quot;&quot;},&quot;publicUrl&quot;:&quot;https:\/\/finalcntdwn2020.wixsite.com\/my-site-1&quot;,&quot;editorSessionId&quot;:&quot;d594528c-f10a-4d53-bda0-ce0c2b3259fc&quot;,&quot;usedMetaSiteNames&quot;:[],&quot;runningExperiments&quot;:{&quot;se_repeater_direction&quot;:&quot;new&quot;,&quot;se_ooiControllers&quot;:&quot;new&quot;,&quot;se_hiddenElementsPanel&quot;:&quot;show_icon&quot;,&quot;se_qrCodeToPublishedSite&quot;:&quot;new&quot;,&quot;specs.wixCode.DraftPublish&quot;:&quot;false&quot;,&quot;specs.wixCode.AtlasV2Enabled&quot;:&quot;true&quot;,&quot;specs.marketplace.blackFridaySale&quot;:&quot;false&quot;,&quot;se_smartWriterRedesign&quot;:&quot;new&quot;,&quot;specs.media.MediaManager3&quot;:&quot;true&quot;,&quot;se_mediaPanelShowCreateMediaSection&quot;:&quot;true&quot;,&quot;specs.wos.SiteHistoryBM&quot;:&quot;true&quot;,&quot;se_multipleItemsToNonDevUsers&quot;:&quot;new&quot;,&quot;se_widgetGfppFix&quot;:&quot;new&quot;,&quot;se_multilingualLocalizedSwitcher&quot;:&quot;new&quot;,&quot;se_Ascend_crmHomeButton&quot;:&quot;false&quot;,&quot;specs.wixCode.CodeEditorEslintRecommended&quot;:&quot;true&quot;,&quot;specs.media-manager-g6.NewCheckout&quot;:&quot;true&quot;,&quot;se_alternativaArenaEndpoint&quot;:&quot;new&quot;,&quot;se_googleMapDatabinding&quot;:&quot;new&quot;,&quot;se_membersArea_HideProtectionTypeForPrivatePages&quot;:&quot;new&quot;,&quot;specs.wixCode.codeModelDeprecation&quot;:&quot;true&quot;,&quot;se_mediaPanelShowRecommendedMedia&quot;:&quot;false&quot;,&quot;specs.wixCode.se_veloComponentsNewWorkspace&quot;:&quot;true&quot;,&quot;se_wixBooking_bizMgrImprovement&quot;:&quot;new&quot;,&quot;se_disableAppBuilderLayoutCalls&quot;:&quot;new&quot;,&quot;specs.chat.HideSettingsFirstTime&quot;:&quot;true&quot;,&quot;se_educationStudent&quot;:&quot;new&quot;,&quot;spec.wix-labs-faq.EnableNewVersion&quot;:&quot;true&quot;,&quot;se_wixPromote_showAscendButtonOnNotPublishedSite&quot;:&quot;true&quot;,&quot;searchSuggestions&quot;:&quot;new&quot;,&quot;se_setAsHomePageContextMenu&quot;:&quot;new&quot;,&quot;specs.wixCode.codereuse-new-package-install-api&quot;:&quot;true&quot;,&quot;specs.wixCode.BMOverEditor&quot;:&quot;true&quot;,&quot;se_addPageDynamic&quot;:&quot;new&quot;,&quot;specs.media-manager-g6.PriceWithTax&quot;:&quot;true&quot;,&quot;se_disableNewUserVideo&quot;:&quot;new&quot;,&quot;se_widgetDesign&quot;:&quot;new&quot;,&quot;se_newSSRCacheTimeFrames&quot;:&quot;new&quot;,&quot;se_migrateToMeshScreen&quot;:&quot;1&quot;,&quot;se_nonResizableRefComponent&quot;:&quot;new&quot;,&quot;se_wixBookings_disableDashboardOnInstall&quot;:&quot;new&quot;,&quot;newBlogMagicMigration&quot;:&quot;new&quot;,&quot;se_PriceWithTax&quot;:&quot;true&quot;,&quot;specs.wixCode.enableUseBatchOnBIEvents_3&quot;:&quot;true&quot;,&quot;se_stylablePanelElementHighlighting&quot;:&quot;new&quot;,&quot;se_appManagerSegments&quot;:&quot;old&quot;,&quot;se_newReleasesFeed&quot;:&quot;new&quot;,&quot;specs.chat.WidgetRedesignPhase1&quot;:&quot;true&quot;,&quot;se_localizedLanguagePicker&quot;:&quot;new&quot;,&quot;se_enableFileShareDashboard&quot;:&quot;false&quot;,&quot;se_linkPanelsAddNewPage&quot;:&quot;new&quot;,&quot;se_tooManyPagesLimitation&quot;:&quot;new&quot;,&quot;se_panelHeaderBackButton&quot;:&quot;new&quot;,&quot;specs.velo.CreateVeloPackageConfigBackend&quot;:&quot;true&quot;,&quot;specs.wixCode.codereuse-useV2RepositoryUrl&quot;:&quot;true&quot;,&quot;WixStoresLaunch&quot;:&quot;new&quot;,&quot;se_siteMenuErrorsHandling&quot;:&quot;new&quot;,&quot;themewiring&quot;:&quot;true&quot;,&quot;apd_presetsRedesign&quot;:&quot;new&quot;,&quot;specs.marketplace.newReviewComponent&quot;:&quot;true&quot;,&quot;se_silentPreInstall&quot;:&quot;new&quot;,&quot;se_newCustomTypesFlow&quot;:&quot;new&quot;,&quot;se_attachHighlightRespectsScroll&quot;:&quot;new&quot;,&quot;se_editorxNewProGalleryAddPanelSectionDesign&quot;:&quot;new&quot;,&quot;specs.marketplace.hideDevName&quot;:&quot;true&quot;,&quot;se_privacyGDPRInSettings&quot;:&quot;new&quot;,&quot;se_newBlogQuickMigration&quot;:&quot;new&quot;,&quot;specs.media.MediaManager3Migrate&quot;:&quot;true&quot;,&quot;specs.codeEmbed.CustomCodeOnly&quot;:&quot;true&quot;,&quot;se_blocksNewServer&quot;:&quot;new&quot;,&quot;specs.wixCode.EditorDeeplinksInBM&quot;:&quot;true&quot;,&quot;specs.wixCode.newCodeTemplates&quot;:&quot;true&quot;,&quot;se_smartWriter&quot;:&quot;new&quot;,&quot;specs.marketplace.use-new-marketplace&quot;:&quot;true&quot;,&quot;specs.wixCode.AutoCMSv2&quot;:&quot;false&quot;,&quot;se_focusBoxUIChanges&quot;:&quot;new&quot;,&quot;se_enableDragFromEditBox&quot;:&quot;new&quot;,&quot;se_searchBoxRtlSettings&quot;:&quot;new&quot;,&quot;se_NewHorizontalMenuLimitedHoverFeatures&quot;:&quot;new&quot;,&quot;se_newLinkPanelFlowForAnchors&quot;:&quot;new&quot;,&quot;se_appBuilderNameWithAsyncValidation&quot;:&quot;new&quot;,&quot;se_requirejsCrossorigin&quot;:&quot;new&quot;,&quot;se_UploadButtonVideoQuotaBanner&quot;:&quot;old&quot;,&quot;se_wixBookings_HealthWaivers&quot;:&quot;new&quot;,&quot;se_EditorSearchBMIntegration&quot;:&quot;new&quot;,&quot;se_showDisplayNameInEditBox&quot;:&quot;new&quot;,&quot;se_fedopsLogger&quot;:&quot;new&quot;,&quot;se_InputElementsRemoveLabelToggles&quot;:&quot;new&quot;,&quot;specs.wixCode.enableUseBatchOnBIEvents_2&quot;:&quot;true&quot;,&quot;se_wixBookings_IntroFunnelPreInstallation&quot;:&quot;new&quot;,&quot;specs.wixData.SignatureInput&quot;:&quot;true&quot;,&quot;se_mediaPanelAddSection&quot;:&quot;B&quot;,&quot;se_stylableMulticompDesign&quot;:&quot;new&quot;,&quot;se_loginSocialBarNewSettings&quot;:&quot;false&quot;,&quot;se_chat_button_added&quot;:&quot;new&quot;,&quot;se_UploadButtonMultipleFiles&quot;:&quot;new&quot;,&quot;videobox_databinding&quot;:&quot;new&quot;,&quot;rcToTestSiteOnEditorX&quot;:&quot;true&quot;,&quot;se_removeSeoSet&quot;:&quot;new&quot;,&quot;se_flushBIOnUnload&quot;:&quot;new&quot;,&quot;se_prerenderPreviewUserBased&quot;:&quot;old&quot;,&quot;se_UploadButtonMaxFileSize&quot;:&quot;old&quot;,&quot;se_mediaPanelIcon&quot;:&quot;C&quot;,&quot;specs.wixCode.tbfSupportArrowFunctions&quot;:&quot;true&quot;,&quot;specs.funnel.NewIntroEnableAppSuggestions&quot;:&quot;true&quot;,&quot;se_Ascend_splitChatAndInbox&quot;:&quot;true&quot;,&quot;spec.wixCode.fixEdixConsoleBug_VELO-4273&quot;:&quot;true&quot;,&quot;se_mediaPanelColor&quot;:&quot;orange&quot;,&quot;se_AddPanelOnlinePrograms&quot;:&quot;old&quot;,&quot;se_wixBooking_LearnMore6thButton&quot;:&quot;new&quot;,&quot;se_googleTranslate&quot;:&quot;new&quot;,&quot;se_disableUpdateJsonFromMeasureMapDuringRealDrag&quot;:&quot;new&quot;,&quot;specs.wixCode.cacheNotificationFromServer&quot;:&quot;true&quot;,&quot;se_AddPanelStripSectionAsTopSection&quot;:&quot;new&quot;,&quot;se_sentryNext&quot;:&quot;new&quot;,&quot;se_allowMultipleInstallationOfWidgetApp&quot;:&quot;new&quot;,&quot;se_siteMembersLink&quot;:&quot;new&quot;,&quot;specs.ident.UpdateMembersPermsOnEditor&quot;:&quot;true&quot;,&quot;se_typescriptCodeEditor&quot;:&quot;new&quot;,&quot;se_addSectionHoverUI&quot;:&quot;new&quot;,&quot;se_multilingualOCTRepeatersFix&quot;:&quot;new&quot;,&quot;specs.wixCode.codereuse-useNewPkgRepositoryUrl&quot;:&quot;true&quot;,&quot;se_multilingualTranslationDups&quot;:&quot;new&quot;,&quot;specs.ascend.AccessPackagePicker&quot;:&quot;true&quot;,&quot;se_bgScrollEffects_phaseTwo&quot;:&quot;new&quot;,&quot;se_htmlComponentSettingPanelTitleAttribute&quot;:&quot;new&quot;,&quot;se_multilingualPinLayout&quot;:&quot;new&quot;,&quot;specs.wixCode.useContextEndpoint&quot;:&quot;true&quot;,&quot;se_csaveConcurrentEditingPopup&quot;:&quot;new&quot;,&quot;se_UploadButtonPreviewSelectedFile&quot;:&quot;new&quot;,&quot;specs.wixCode.renameSiteMonitoringToLogging&quot;:&quot;true&quot;,&quot;ds_csave&quot;:&quot;new&quot;,&quot;se_wixBooking_EditorXContent&quot;:&quot;new&quot;,&quot;se_wixStores_installStoresOnUserIntent&quot;:&quot;true&quot;,&quot;specs.wixCode.DraftPublishSelectAllActions&quot;:&quot;true&quot;,&quot;specs.wixData.appPages&quot;:&quot;true&quot;,&quot;se_layersPanelChanges&quot;:&quot;new&quot;,&quot;specs.wixCode.NewSandboxLiveControl&quot;:&quot;true&quot;,&quot;specs.wixCode.wixDataUnifiedIcons&quot;:&quot;true&quot;,&quot;se_rcmMoveOverlappingItems&quot;:&quot;old&quot;,&quot;se_handleTooManySitesForFreeUserException&quot;:&quot;new&quot;,&quot;specs.support.LessCapabilitiesForSupportUser&quot;:&quot;old&quot;,&quot;YontiEditorConduction&quot;:&quot;old&quot;,&quot;se_newMaxStretchValue&quot;:&quot;new&quot;,&quot;se_phoneInputCustomFormats&quot;:&quot;new&quot;,&quot;se_membersArea_AddBadgesSectionToPermissionsTab&quot;:&quot;new&quot;,&quot;se_appManager&quot;:&quot;old&quot;,&quot;se_siteDraftModeEditorExperience&quot;:&quot;new&quot;,&quot;specs.wixCode.veloPkgsSearch&quot;:&quot;true&quot;,&quot;specs.wixCode.CodeEditorDarkThemeV2&quot;:&quot;true&quot;,&quot;newBlogNewPostListSections&quot;:&quot;true&quot;,&quot;specs.engage.restaurantsChatbotVsNoChatbot&quot;:&quot;false&quot;,&quot;se_playInteractionFromModeBar&quot;:&quot;new&quot;,&quot;se_stylablePanelNewElementreeInfra&quot;:&quot;new&quot;,&quot;se_multilingualHideGfpp&quot;:&quot;new&quot;,&quot;se_newWorkspace&quot;:&quot;new&quot;,&quot;se_multilingualOneClickTranslation&quot;:&quot;new&quot;,&quot;se_newAddPanel&quot;:&quot;new&quot;,&quot;specs.abTranslate.santa-editor.abSpec-specs.wixCode.veloRebranding&quot;:&quot;1&quot;,&quot;se_addNewAnchorFromAnchorMenu&quot;:&quot;new&quot;,&quot;se_stylablePanel&quot;:&quot;new&quot;,&quot;se_multilingualHidePageActions&quot;:&quot;new&quot;,&quot;se_removeTextButtons&quot;:&quot;true&quot;,&quot;se_multilingualModeV2&quot;:&quot;new&quot;,&quot;specs.wixCode.enableUseBatchOnBIEvents&quot;:&quot;false&quot;,&quot;specs.experts.FeedBackNg2&quot;:&quot;true&quot;,&quot;specs.wixCode.BackupBeforeImport&quot;:&quot;true&quot;,&quot;se_newSentryVm&quot;:&quot;new&quot;,&quot;specs.wixCode.veloRebranding&quot;:&quot;true&quot;,&quot;se_mediaPanelNewTexts&quot;:&quot;true&quot;,&quot;se_stylableButtonThemes&quot;:&quot;new&quot;,&quot;se_layersAutofocus&quot;:&quot;new&quot;,&quot;se_optimisticDrag&quot;:&quot;new&quot;,&quot;ricos_databinding&quot;:&quot;new&quot;,&quot;specs.marketplace.complete-install&quot;:&quot;true&quot;,&quot;displayWixAdsNewVersion&quot;:&quot;new&quot;,&quot;se_EditorSearch&quot;:&quot;new&quot;,&quot;specs.wixCode.DateOnlyFieldType&quot;:&quot;false&quot;,&quot;specs.wixCode.tbfSupportHttpFunctions&quot;:&quot;true&quot;,&quot;se_preselectLinkPanelPageTab&quot;:&quot;old&quot;,&quot;rcToTestSiteOnSantaEditor&quot;:&quot;true&quot;,&quot;se_wixBookings_IntroFunnelV2&quot;:&quot;new&quot;,&quot;se_hideOldBlogManagePostsGfppButtons&quot;:&quot;new&quot;,&quot;se_videoPlayerNewPresets&quot;:&quot;new&quot;,&quot;se_addPanel_vectorArt_featuredSection&quot;:&quot;new&quot;,&quot;specs.wixCode.EmptyStateInBM&quot;:&quot;true&quot;,&quot;se_wixBookings_newAddPanel&quot;:&quot;new&quot;,&quot;se_classicPlatformHostIntegration&quot;:&quot;new&quot;,&quot;specs.marketplace.supported-by-editorx&quot;:&quot;false&quot;,&quot;se_editorSDKAppSingleInstall&quot;:&quot;new&quot;,&quot;specs.wixCode.translationsFromClassicEditor&quot;:&quot;true&quot;,&quot;specs.wixCode.FirstCreatedCollectionHelper&quot;:&quot;false&quot;,&quot;se_csaveEditingPopup&quot;:&quot;new&quot;,&quot;newBlogPostListWidgetSections&quot;:&quot;new&quot;,&quot;se_dynamicPagesComboboxLayoutTweaks&quot;:&quot;new&quot;,&quot;specs.marketplace.showDealerBanner&quot;:&quot;true&quot;,&quot;se_obMigrationFlow&quot;:&quot;new&quot;,&quot;se_seoTagOptionsUpdate&quot;:&quot;new&quot;,&quot;se_full_screen_by_form_factor_on_editorx&quot;:&quot;new&quot;,&quot;specs.marketplace.editorx-for-14517e1a-3ff0-af98-408e-2bd6953c36a2&quot;:&quot;true&quot;,&quot;se_editorXInputLabels&quot;:&quot;new&quot;,&quot;se_NewHorizontalMenuReplaceOldPresetsInAddPanel&quot;:&quot;new&quot;,&quot;specs.wixCode.typescriptCodeEditorInAppBuilder&quot;:&quot;true&quot;,&quot;se_dealerPlacementOnSave&quot;:&quot;old&quot;,&quot;se_removeSettingsGFPPVerticalAnchorMenu&quot;:&quot;new&quot;,&quot;se_NewHorizontalMenuApplyCssFixer&quot;:&quot;new&quot;,&quot;se_wixBooking_6thButtonWithLinkToPagesPanel&quot;:&quot;old&quot;,&quot;specs.wixCode.codeReuseShowReleaseNotes&quot;:&quot;true&quot;,&quot;se_multilingualOCTNoServer&quot;:&quot;new&quot;,&quot;se_UploadButtonPopperContent&quot;:&quot;new&quot;,&quot;specs.wixData.UnifyExperience&quot;:&quot;true&quot;,&quot;specs.ascend.AscendAwareness&quot;:&quot;true&quot;,&quot;searchExpandableLayout&quot;:&quot;old&quot;,&quot;se_showSeoAndAccessibilityForStyleOnlyText&quot;:&quot;new&quot;,&quot;se_addAnchorMenu_newFlows&quot;:&quot;anchorManager&quot;,&quot;se_rcmRemoveUndo&quot;:&quot;new&quot;,&quot;se_gfppSelectedMainAction&quot;:&quot;new&quot;,&quot;se_gtmOpenEditorEvent&quot;:&quot;new&quot;,&quot;se_stylablePanelVerticalMode&quot;:&quot;A&quot;,&quot;se_enableOpenModalPanelForTPAs&quot;:&quot;new&quot;,&quot;se_newQABSocialNetworks&quot;:&quot;new&quot;},&quot;languageCode&quot;:&quot;en&quot;,&quot;metaSiteTemplate&quot;:false,&quot;siteMetaData&quot;:{&quot;preloader&quot;:{&quot;uri&quot;:&quot;&quot;,&quot;enabled&quot;:false},&quot;contactInfo&quot;:{&quot;companyName&quot;:&quot;&quot;,&quot;phone&quot;:&quot;&quot;,&quot;fax&quot;:&quot;&quot;,&quot;email&quot;:&quot;&quot;,&quot;address&quot;:&quot;&quot;},&quot;hasMobileStructure&quot;:false,&quot;quickActions&quot;:{&quot;socialLinks&quot;:[],&quot;colorScheme&quot;:&quot;dark&quot;,&quot;configuration&quot;:{&quot;quickActionsMenuEnabled&quot;:false,&quot;navigationMenuEnabled&quot;:true,&quot;phoneEnabled&quot;:false,&quot;emailEnabled&quot;:false,&quot;addressEnabled&quot;:false,&quot;socialLinksEnabled&quot;:false}},&quot;headTags&quot;:&quot;&quot;,&quot;renderHints&quot;:{&quot;containsTPA&quot;:true,&quot;isMeshReady&quot;:true,&quot;containsAppPart&quot;:false,&quot;containsAppPart2&quot;:false,&quot;componentsCount&quot;:{&quot;wysiwyg.viewer.components.ExpandableMenu&quot;:1,&quot;wysiwyg.viewer.components.HeaderContainer&quot;:1,&quot;wysiwyg.viewer.components.menus.DropDownMenu&quot;:1,&quot;mobile.core.components.Page&quot;:10,&quot;wysiwyg.viewer.components.MenuToggle&quot;:1,&quot;wysiwyg.viewer.components.SiteRegionContainer&quot;:1,&quot;wysiwyg.viewer.components.PagesContainer&quot;:1,&quot;wysiwyg.viewer.components.tpapps.TPAMultiSection&quot;:5,&quot;wysiwyg.viewer.components.tpapps.TPAWidget&quot;:1,&quot;wysiwyg.viewer.components.WRichText&quot;:1,&quot;wysiwyg.viewer.components.MenuContainer&quot;:1,&quot;wysiwyg.viewer.components.PageGroup&quot;:1,&quot;wysiwyg.viewer.components.FooterContainer&quot;:1,&quot;wixui.StylableButton&quot;:10,&quot;wysiwyg.common.components.backtotopbutton.viewer.BackToTopButton&quot;:1,&quot;wysiwyg.viewer.components.tpapps.TPASection&quot;:4,&quot;platform.components.AppController&quot;:1},&quot;applications&quot;:{&quot;4aebd0cb-fbdb-4da7-b5d1-d05660a30172&quot;:{&quot;widgetsCount&quot;:{&quot;6467c15e-af3c-4e8d-b167-41bfb8efc32a&quot;:1}},&quot;1505b775-e885-eb1b-b665-1e485d9bf90e&quot;:{&quot;widgetsCount&quot;:{&quot;151290e1-62a2-0775-6fbc-02182fad5dec&quot;:1}},&quot;14cc59bc-f0b7-15b8-e1c7-89ce41d0e0c9&quot;:{&quot;controllersCount&quot;:{&quot;members&quot;:1}},&quot;14cffd81-5215-0a7f-22f8-074b0e2401fb&quot;:{&quot;widgetsCount&quot;:{&quot;14dd1af6-3e02-63db-0ef2-72fbc7cc3136&quot;:1}},&quot;1380b703-ce81-ff05-f115-39571d94dfcd&quot;:{&quot;widgetsCount&quot;:{&quot;1380bbb4-8df0-fd38-a235-88821cf3f8a4&quot;:1,&quot;14fd5970-8072-c276-1246-058b79e70c1a&quot;:1,&quot;13a94f09-2766-3c40-4a32-8edb5acdd8bc&quot;:1,&quot;1380bbab-4da3-36b0-efb4-2e0599971d14&quot;:1,&quot;14e121c8-00a3-f7cc-6156-2c82a2ba8fcb&quot;:1,&quot;1380bba0-253e-a800-a235-88821cf3f8a4&quot;:1}},&quot;14ce28f7-7eb0-3745-22f8-074b0e2401fb&quot;:{&quot;widgetsCount&quot;:{&quot;14cefc05-d163-dbb7-e4ec-cd4f2c4d6ddd&quot;:1}}},&quot;containsInteractions&quot;:false,&quot;containsBPVariantsData&quot;:false}},&quot;previewUrl&quot;:&quot;https:\/\/editor.wix.com\/html\/editor\/web\/renderer\/render\/document\/3fd7b001-a042-42fe-8da1-bf66fc9a8d66?metaSiteId=df0789af-1e58-4920-8bab-6e54fb5a4b6d&amp;editorSessionId=d594528c-f10a-4d53-bda0-ce0c2b3259fc&quot;,&quot;permissionsInfo&quot;:{&quot;loggedInUserId&quot;:&quot;f4c2280a-7348-4dcf-8205-0fcbfa35314b&quot;,&quot;ownerId&quot;:&quot;f4c2280a-7348-4dcf-8205-0fcbfa35314b&quot;,&quot;loggedInUserRoles&quot;:[{&quot;role&quot;:&quot;owner&quot;}],&quot;permissions&quot;:[]},&quot;geo&quot;:&quot;NPL&quot;,&quot;metaSiteFlags&quot;:[&quot;UrlMigrated&quot;,&quot;UseHttps&quot;],&quot;userProfile&quot;:{&quot;firstName&quot;:&quot;S.&quot;,&quot;lastName&quot;:&quot;Kumar&quot;,&quot;imageUrl&quot;:&quot;https:\/\/lh3.googleusercontent.com\/a\/AATXAJz654u0Rpns4gy7cUcbxaqnoq0LLBY9oNWcMDiu%3Ds96-c&quot;},&quot;isDacRollout&quot;:false,&quot;willUseTbInPreview&quot;:false,&quot;isDraft&quot;:false}; var serviceTopology = {&quot;scriptsLocationMap&quot;:{&quot;dealer-client-api&quot;:&quot;<a data-from-md title='https://static.parastorage.com/services/dealer-client-api/1.1405.0%22,%22dealer-react-viewer%22:%22https://static.parastorage.com/services/dealer-react-viewer/1.36.0%22,%22site-generator-statics-metadata%22:%22https://static.parastorage.com/services/site-generator-statics-metadata/1.1703.0%22,%22editor-platform-host-integration%22:%22https://static.parastorage.com/services/editor-platform-host-integration/1.368.0%22,%22santa-editor%22:%22https://static.parastorage.com/services/santa-editor/1.13153.0%22,%22wix-code-classic-editor%22:%22https://static.parastorage.com/services/wix-code-classic-editor/1.1279.739%22,%22wix-code-viewer-app%22:%22https://static.parastorage.com/services/wix-code-viewer-app/1.1479.228%22,%22marketplace-component%22:%22https://static.parastorage.com/services/marketplace-component/1.3729.0%22,%22react-dealer-viewer%22:%22https://static.parastorage.com/services/react-dealer-viewer/1.1317.0%22,%22editor-presets-bundle%22:%22https://static.parastorage.com/services/editor-presets-bundle/1.147.0%22,%22dbsm-viewer-app%22:%22https://static.parastorage.com/services/dbsm-viewer-app/1.3831.0%22,%22fallback-viewer-app%22:%22https://static.parastorage.com/services/fallback-viewer-app/1.0.0%22,%22responsive-editor-common-infra%22:%22https://static.parastorage.com/services/responsive-editor-common-infra/1.334.0%22,%22wix-bolt%22:%22https://static.parastorage.com/services/wix-bolt/1.7492.0%22,%22dealer-cms-translations%22:%22https://static.parastorage.com/services/dealer-cms-translations/1.5002.0%22,%22promote-analytics-adapter%22:%22https://static.parastorage.com/services/promote-analytics-adapter/2.759.0%22,%22wix-music-embed%22:%22https://static.parastorage.com/services/wix-music-embed/1.26.0%22,%22santa-resources%22:%22https://static.parastorage.com/services/santa-resources/1.2.0%22,%22wixapps%22:%22https://static.parastorage.com/services/wixapps/2.486.0%22,%22js-platform-editor-sdk%22:%22https://static.parastorage.com/services/js-platform-editor-sdk/1.1827.0%22,%22ecommerce%22:%22https://static.parastorage.com/services/ecommerce/1.203.0%22,%22advanced-seo-client%22:%22https://static.parastorage.com/services/advanced-seo-client/1.1910.0%22,%22dbsm-editor-app%22:%22https://static.parastorage.com/services/dbsm-editor-app/1.5623.0%22,%22santa-platform-apps-container%22:%22https://static.parastorage.com/services/santa-platform-apps-container/1.843.0%22,%22langs%22:%22https://static.parastorage.com/services/langs/2.577.0%22,%22responsive-editor%22:%22https://static.parastorage.com/services/responsive-editor/1.1939.0%22,%22semi-native-sdk%22:%22https://static.parastorage.com/services/semi-native-sdk/1.8.0%22,%22automation%22:%22https://static.parastorage.com/services/automation/1.23.0%22,%22wix-code-editor-app%22:%22https://static.parastorage.com/services/wix-code-editor-app/1.1667.193%22,%22wix-thunderbolt%22:%22https://static.parastorage.com/services/wix-thunderbolt/1.8198.0%22,%22web%22:%22https://static.parastorage.com/services/web/2.1229.80%22,%22sitemembers%22:%22https://static.parastorage.com/services/sm-js-sdk/1.31.0%22,%22notifications-widget-component%22:%22https://static.parastorage.com/services/notifications-widget-component/1.967.0%22,%22responsive-blocks-packages%22:%22https://static.parastorage.com/services/responsive-blocks-packages/1.2437.0%22,%22universal-editor-app%22:%22https://static.parastorage.com/services/universal-editor-app/1.992.0%22,%22editor-elements%22:%22https://static.parastorage.com/services/editor-elements/1.6832.0%22,%22responsive-editor-migration%22:%22https://static.parastorage.com/services/responsive-editor-migration/1.91.0%22,%22tpa%22:%22https://static.parastorage.com/services/tpa/2.1065.0%22,%22add-panel-data-classic-editor%22:%22https://static.parastorage.com/services/add-panel-data-classic-editor/1.650.0%22,%22wix-code-platform%22:%22https://static.parastorage.com/services/wix-code-platform/1.964.0%22,%22responsive-editor-presets-metadata%22:%22https://static.parastorage.com/services/responsive-editor-presets-metadata/1.1648.0%22,%22locale-dataset-data%22:%22https://static.parastorage.com/services/locale-dataset-data/1.2907.0%22,%22santa%22:%22https://static.parastorage.com/services/santa/1.11783.0%22,%22linguist-flags%22:%22https://static.parastorage.com/services/linguist-flags/1.663.0%22,%22promote-seo-renderer%22:%22https://static.parastorage.com/services/promote-seo-renderer/1.2.0%22,%22skins%22:%22https://static.parastorage.com/services/skins/2.1229.80%22,%22santa-site-auth-module%22:%22https://static.parastorage.com/services/santa-site-auth-module/1.9.0%22,%22document-management%22:%22https://static.parastorage.com/services/document-management/1.7079.0%22,%22responsive-editor-packages%22:%22https://static.parastorage.com/services/responsive-editor-packages/1.8145.0%22,%22manage-installed-apps%22:%22https://static.parastorage.com/services/manage-installed-apps/1.1379.0%22,%22wixcode-namespaces%22:%22https://static.parastorage.com/services/wixcode-namespaces/1.934.0%22,%22media-gallery-g5%22:%22https://static.parastorage.com/services/media-gallery-g5/1.1361.0%22,%22core%22:%22https://static.parastorage.com/services/core/2.1229.80%22,%22santa-langs%22:%22https://static.parastorage.com/services/santa-langs/1.11047.0%22,%22ck-editor%22:%22https://static.parastorage.com/services/ck-editor/1.87.3%22,%22wixmp-sdk%22:%22https://static.parastorage.com/services/wixmp-sdk/1.16.0%22,%22marketplace-editor-container%22:%22https://static.parastorage.com/services/marketplace-editor-container/1.2405.103%22,%22bootstrap%22:%22https://static.parastorage.com/services/bootstrap/2.1229.80%22,%22editorx-santa-editor-bridge%22:%22https://static.parastorage.com/services/editorx-santa-editor-bridge/1.1345.0%22,%22members-area-app-definitions%22:%22https://static.parastorage.com/services/members-area-app-definitions/1.464.0%22,%22js-platform-apps-configuration%22:%22https://static.parastorage.com/services/js-platform-apps-configuration/1.235.0%22,%22wix-code-code-editor%22:%22https://static.parastorage.com/services/wix-code-code-editor/1.794.0%22,%22wix-ui-santa%22:%22https://static.parastorage.com/services/wix-ui-santa/1.1697.0%22,%22blocks-client-viewer-app%22:%22https://static.parastorage.com/services/blocks-client-viewer-app/1.47.0%22,%22tpa-gfpp-data%22:%22https://static.parastorage.com/services/tpa-gfpp-data/1.1002.0%22%7D,%22scriptsVersionsMap%22:%7B%22santa-data-fixer%22:%221.1402.0%22,%22ghostable-structure-builder%22:%221.150.0%22,%22santa-main-r%22:%221.100.0%22,%22simple-all-pages%22:%221.0.0%22,%22remote-widget-assets-wrapper%22:%221.5.0%22,%22remote-widget-structure-builder%22:%221.226.0%22,%22santa-site-metadata%22:%221.1880.0%22,%22stylable-santa-flatten%22:%222.0.222%22,%22ghostable-builder%22:%221.3.0%22%7D,%22serverName%22:%22wix.com%22,%22siteAssetsServerUrl%22:%22https://siteassets.parastorage.com/pages%22,%22htmlComponentServer%22:%22https://0.htmlcomponentservice.com%22,%22staticHTMLComponentUrl%22:%22https://df0789af-1e58-4920-8bab-6e54fb5a4b6d.filesusr.com/%22,%22baseDomain%22:%22wix.com%22,%22basePublicUrl%22:%22https://www.wix.com/%22,%22editorPageStoreUrl%22:%22https://fallback.wix.com/wix-html-editor-pages-webapp/pageForEditor%22,%22directStaticServerUrl%22:%22https://static.96.wix.com/%22,%22scriptsDomainUrl%22:%22https://static.parastorage.com/%22,%22locationStaticServerUrl%22:%22https://static.96.wix.com/%22,%22publicPageStoreUrl%22:%22https://publicorigin.wix.com/wix-public-html-renderer/page%22,%22publicStaticsUrl%22:%22//static.parastorage.com/services/wix-public/1.299.0/%22,%22publicStaticBaseUri%22:%22//static.parastorage.com/services/wix-public/1.299.0/%22,%22wixCloudSiteExtensionsServiceUrl%22:%22https://editor.wix.com/wix-code-service%22,%22appMarketEditorApiUrl%22:%22https://editor.wix.com/_api/app-market-api/apps%22,%22appMarketEditorNewUrl%22:%22https://editor.wix.com/wix-app-market/editor%22,%22appMarketEditorUrl%22:%22https://editor.wix.com/app-market-editor%22,%22appStoreUrl%22:%22https://editor.wix.com/wix-apps%22,%22autoSaveUrl%22:%22https://editor.wix.com/html/autosave/%22,%22biServerUrl%22:%22https://frog.wix.com%22,%22blobUrl%22:%22https://static.parastorage.com/wix_blob%22,%22commonServicesUrl%22:%22https://api.wix.com/common-services%22,%22createFacebookUrl%22:%22https://www.wix.com/create/website/html/facebook/fb/1%22,%22createMobileUrl%22:%22https://meditor.wix.com/site/add/%22,%22createWebsiteUrl%22:%22https://www.wix.com/create/website/all/all/web%22,%22dashboardServiceUrl%22:%22https://dashboard.wix.com/wix-dashboard%22,%22dashboardUrl%22:%22https://www.wix.com/create/my-account%22,%22developerMode%22:false,%22digitalGoodsServerUrl%22:%22https://dgs.wixapps.net/%22,%22ecommerceCheckoutUrl%22:%22https://www.safer-checkout.com/%22,%22ecommerceStoreManagerUrl%22:%22https://editor.wix.com/ecommerce%22,%22editorAssetsBaseUrl%22:%22https://editorassets.parastorage.com/%22,%22editorServerRoot%22:%22https://editor.wix.com/html/editor/web%22,%22appStudioServerRoot%22:%22https://editor.wix.com/html/app-builder/web%22,%22editorServerRootFB%22:%22https://editor.wix.com/html/editor/fb%22,%22emailServer%22:%22https://assets.wix.com/common-services/notification/invoke%22,%22floggerUrl%22:%22https://frog.wix.com%22,%22helpServer%22:%22https://lc.wix.com/support/main/html5%22,%22htmlEditorRootUrl%22:%22https://editor.wix.com/html/editor%22,%22locationBaseDomain%22:%2296.wix.com%22,%22locationStaticServerRootUrl%22:%22https://static.96.wix.com%22,%22mediaGalleryBaseUrl%22:%22https://editor.wix.com/_partials/media-gallery-ng/0.354.0/%22,%22mediaGalleryBaseUrlB%22:%22https://editor.wix.com/_partials/media-gallery-ng/0.354.0/%22,%22mediaGalleryG5BaseUrl%22:%22https://editor.wix.com/_partials/media-gallery-g5/1.1361.0/%22,%22mediaGalleryG5StaticBaseUrl%22:%22//static.parastorage.com/services/media-gallery-g5/1.1361.0/%22,%22mediaGalleryStaticBaseUrl%22:%22//static.parastorage.com/services/media-gallery-ng/0.354.0/%22,%22mediaGalleryStaticBaseUrlB%22:%22//static.parastorage.com/services/media-gallery-ng/0.354.0/%22,%22mediaManagerUrl%22:%22https://editor.wix.com/_partials/media-gallery-g5/1.1361.0/%22,%22mediaManagerFrameUrl%22:%22https://static.parastorage.com/unpkg-semver/media-frame@%5E1/MediaFrame.bundle.min.js%22,%22mediaRootUrl%22:%22https://static.wixstatic.com/%22,%22mediaServerRoot%22:%22wix.com%22,%22nestedComponentsMapUrl%22:%22%22,%22premiumServerUrl%22:%22https://premium.wix.com%22,%22premiumStateApiUrl%22:%22https://editor.wix.com/_api/wix/getTpaPremiumState%22,%22productionMode%22:true,%22screenshotServiceUrl%22:%22https://screenshoter.wixpress.com/v1/screenshots%22,%22siteMembersUrl%22:%22https://users.wix.com/wix-sm%22,%22staticAudioUrl%22:%22https://music.wixstatic.com/mp3%22,%22staticDocsUrl%22:%22https://docs.wixstatic.com/ugd%22,%22staticMediaUrl%22:%22https://static.wixstatic.com/media%22,%22staticServerFallbackUrl%22:%22https://static.parastorage.com/%22,%22staticServerUrl%22:%22https://static.wix.com/%22,%22staticVideoUrl%22:%22https://video.wixstatic.com/%22,%22wixCloudBaseDomain%22:%22wix-code.com%22,%22wixCloudEditorBaseUrl%22:%22https://editor.wix.com/wix-code-ide-server%22,%22wixCodeIdeServerUrl%22:%22https://code.wix.com/wix-code-ide-server%22,%22wixCodeServiceUrl%22:%22https://code.wix.com/wix-code-service%22,%22wixCloudMonitoringHubUrl%22:%22https://editor.wix.com/_api/cloud-monitoring-hub%22,%22wixCodeMonitoringHubUrl%22:%22https://monitoringhub.wix.com%22,%22staticVideoHeadRequestUrl%22:%22https://storage.googleapis.com/video.wixstatic.com%22,%22wixStoresMigrationServiceUrl%22:%22https://editor.wix.com/_api/wix-ecommerce-migration-web/%22,%22feedbackServiceUrl%22:%22https://editor.wix.com/_api/feedback-server%22,%22salesSystemResolverUrl%22:%22https://editor.wix.com/_api/wix/salesSystemResolver%22,%22dealerUrl%22:%22https://editor.wix.com/_api/wix-dealer-integration-webapp%22,%22mediaUploadServerUrl%22:%22https://files.wix.com/%22,%22adaptiveVideoDomain%22:%22https://files.wix.com/%22,%22userFileDomainUrl%22:%22filesusr.com%22,%22businessManagerUrl%22:%22https://manage.wix.com/dashboard%22,%22linguistUrl%22:%22/_api/linguist%22,%22editorWorkerBaseUrl%22:%22https://editor.wix.com/_partials%22,%22businessManagerDomain%22:%22https://manage.wix.com%22,%22editorRootUrl%22:%22https://editor.wix.com/' href='https://static.parastorage.com/services/dealer-client-api/1.1405.0%22,%22dealer-react-viewer%22:%22https://static.parastorage.com/services/dealer-react-viewer/1.36.0%22,%22site-generator-statics-metadata%22:%22https://static.parastorage.com/services/site-generator-statics-metadata/1.1703.0%22,%22editor-platform-host-integration%22:%22https://static.parastorage.com/services/editor-platform-host-integration/1.368.0%22,%22santa-editor%22:%22https://static.parastorage.com/services/santa-editor/1.13153.0%22,%22wix-code-classic-editor%22:%22https://static.parastorage.com/services/wix-code-classic-editor/1.1279.739%22,%22wix-code-viewer-app%22:%22https://static.parastorage.com/services/wix-code-viewer-app/1.1479.228%22,%22marketplace-component%22:%22https://static.parastorage.com/services/marketplace-component/1.3729.0%22,%22react-dealer-viewer%22:%22https://static.parastorage.com/services/react-dealer-viewer/1.1317.0%22,%22editor-presets-bundle%22:%22https://static.parastorage.com/services/editor-presets-bundle/1.147.0%22,%22dbsm-viewer-app%22:%22https://static.parastorage.com/services/dbsm-viewer-app/1.3831.0%22,%22fallback-viewer-app%22:%22https://static.parastorage.com/services/fallback-viewer-app/1.0.0%22,%22responsive-editor-common-infra%22:%22https://static.parastorage.com/services/responsive-editor-common-infra/1.334.0%22,%22wix-bolt%22:%22https://static.parastorage.com/services/wix-bolt/1.7492.0%22,%22dealer-cms-translations%22:%22https://static.parastorage.com/services/dealer-cms-translations/1.5002.0%22,%22promote-analytics-adapter%22:%22https://static.parastorage.com/services/promote-analytics-adapter/2.759.0%22,%22wix-music-embed%22:%22https://static.parastorage.com/services/wix-music-embed/1.26.0%22,%22santa-resources%22:%22https://static.parastorage.com/services/santa-resources/1.2.0%22,%22wixapps%22:%22https://static.parastorage.com/services/wixapps/2.486.0%22,%22js-platform-editor-sdk%22:%22https://static.parastorage.com/services/js-platform-editor-sdk/1.1827.0%22,%22ecommerce%22:%22https://static.parastorage.com/services/ecommerce/1.203.0%22,%22advanced-seo-client%22:%22https://static.parastorage.com/services/advanced-seo-client/1.1910.0%22,%22dbsm-editor-app%22:%22https://static.parastorage.com/services/dbsm-editor-app/1.5623.0%22,%22santa-platform-apps-container%22:%22https://static.parastorage.com/services/santa-platform-apps-container/1.843.0%22,%22langs%22:%22https://static.parastorage.com/services/langs/2.577.0%22,%22responsive-editor%22:%22https://static.parastorage.com/services/responsive-editor/1.1939.0%22,%22semi-native-sdk%22:%22https://static.parastorage.com/services/semi-native-sdk/1.8.0%22,%22automation%22:%22https://static.parastorage.com/services/automation/1.23.0%22,%22wix-code-editor-app%22:%22https://static.parastorage.com/services/wix-code-editor-app/1.1667.193%22,%22wix-thunderbolt%22:%22https://static.parastorage.com/services/wix-thunderbolt/1.8198.0%22,%22web%22:%22https://static.parastorage.com/services/web/2.1229.80%22,%22sitemembers%22:%22https://static.parastorage.com/services/sm-js-sdk/1.31.0%22,%22notifications-widget-component%22:%22https://static.parastorage.com/services/notifications-widget-component/1.967.0%22,%22responsive-blocks-packages%22:%22https://static.parastorage.com/services/responsive-blocks-packages/1.2437.0%22,%22universal-editor-app%22:%22https://static.parastorage.com/services/universal-editor-app/1.992.0%22,%22editor-elements%22:%22https://static.parastorage.com/services/editor-elements/1.6832.0%22,%22responsive-editor-migration%22:%22https://static.parastorage.com/services/responsive-editor-migration/1.91.0%22,%22tpa%22:%22https://static.parastorage.com/services/tpa/2.1065.0%22,%22add-panel-data-classic-editor%22:%22https://static.parastorage.com/services/add-panel-data-classic-editor/1.650.0%22,%22wix-code-platform%22:%22https://static.parastorage.com/services/wix-code-platform/1.964.0%22,%22responsive-editor-presets-metadata%22:%22https://static.parastorage.com/services/responsive-editor-presets-metadata/1.1648.0%22,%22locale-dataset-data%22:%22https://static.parastorage.com/services/locale-dataset-data/1.2907.0%22,%22santa%22:%22https://static.parastorage.com/services/santa/1.11783.0%22,%22linguist-flags%22:%22https://static.parastorage.com/services/linguist-flags/1.663.0%22,%22promote-seo-renderer%22:%22https://static.parastorage.com/services/promote-seo-renderer/1.2.0%22,%22skins%22:%22https://static.parastorage.com/services/skins/2.1229.80%22,%22santa-site-auth-module%22:%22https://static.parastorage.com/services/santa-site-auth-module/1.9.0%22,%22document-management%22:%22https://static.parastorage.com/services/document-management/1.7079.0%22,%22responsive-editor-packages%22:%22https://static.parastorage.com/services/responsive-editor-packages/1.8145.0%22,%22manage-installed-apps%22:%22https://static.parastorage.com/services/manage-installed-apps/1.1379.0%22,%22wixcode-namespaces%22:%22https://static.parastorage.com/services/wixcode-namespaces/1.934.0%22,%22media-gallery-g5%22:%22https://static.parastorage.com/services/media-gallery-g5/1.1361.0%22,%22core%22:%22https://static.parastorage.com/services/core/2.1229.80%22,%22santa-langs%22:%22https://static.parastorage.com/services/santa-langs/1.11047.0%22,%22ck-editor%22:%22https://static.parastorage.com/services/ck-editor/1.87.3%22,%22wixmp-sdk%22:%22https://static.parastorage.com/services/wixmp-sdk/1.16.0%22,%22marketplace-editor-container%22:%22https://static.parastorage.com/services/marketplace-editor-container/1.2405.103%22,%22bootstrap%22:%22https://static.parastorage.com/services/bootstrap/2.1229.80%22,%22editorx-santa-editor-bridge%22:%22https://static.parastorage.com/services/editorx-santa-editor-bridge/1.1345.0%22,%22members-area-app-definitions%22:%22https://static.parastorage.com/services/members-area-app-definitions/1.464.0%22,%22js-platform-apps-configuration%22:%22https://static.parastorage.com/services/js-platform-apps-configuration/1.235.0%22,%22wix-code-code-editor%22:%22https://static.parastorage.com/services/wix-code-code-editor/1.794.0%22,%22wix-ui-santa%22:%22https://static.parastorage.com/services/wix-ui-santa/1.1697.0%22,%22blocks-client-viewer-app%22:%22https://static.parastorage.com/services/blocks-client-viewer-app/1.47.0%22,%22tpa-gfpp-data%22:%22https://static.parastorage.com/services/tpa-gfpp-data/1.1002.0%22%7D,%22scriptsVersionsMap%22:%7B%22santa-data-fixer%22:%221.1402.0%22,%22ghostable-structure-builder%22:%221.150.0%22,%22santa-main-r%22:%221.100.0%22,%22simple-all-pages%22:%221.0.0%22,%22remote-widget-assets-wrapper%22:%221.5.0%22,%22remote-widget-structure-builder%22:%221.226.0%22,%22santa-site-metadata%22:%221.1880.0%22,%22stylable-santa-flatten%22:%222.0.222%22,%22ghostable-builder%22:%221.3.0%22%7D,%22serverName%22:%22wix.com%22,%22siteAssetsServerUrl%22:%22https://siteassets.parastorage.com/pages%22,%22htmlComponentServer%22:%22https://0.htmlcomponentservice.com%22,%22staticHTMLComponentUrl%22:%22https://df0789af-1e58-4920-8bab-6e54fb5a4b6d.filesusr.com/%22,%22baseDomain%22:%22wix.com%22,%22basePublicUrl%22:%22https://www.wix.com/%22,%22editorPageStoreUrl%22:%22https://fallback.wix.com/wix-html-editor-pages-webapp/pageForEditor%22,%22directStaticServerUrl%22:%22https://static.96.wix.com/%22,%22scriptsDomainUrl%22:%22https://static.parastorage.com/%22,%22locationStaticServerUrl%22:%22https://static.96.wix.com/%22,%22publicPageStoreUrl%22:%22https://publicorigin.wix.com/wix-public-html-renderer/page%22,%22publicStaticsUrl%22:%22//static.parastorage.com/services/wix-public/1.299.0/%22,%22publicStaticBaseUri%22:%22//static.parastorage.com/services/wix-public/1.299.0/%22,%22wixCloudSiteExtensionsServiceUrl%22:%22https://editor.wix.com/wix-code-service%22,%22appMarketEditorApiUrl%22:%22https://editor.wix.com/_api/app-market-api/apps%22,%22appMarketEditorNewUrl%22:%22https://editor.wix.com/wix-app-market/editor%22,%22appMarketEditorUrl%22:%22https://editor.wix.com/app-market-editor%22,%22appStoreUrl%22:%22https://editor.wix.com/wix-apps%22,%22autoSaveUrl%22:%22https://editor.wix.com/html/autosave/%22,%22biServerUrl%22:%22https://frog.wix.com%22,%22blobUrl%22:%22https://static.parastorage.com/wix_blob%22,%22commonServicesUrl%22:%22https://api.wix.com/common-services%22,%22createFacebookUrl%22:%22https://www.wix.com/create/website/html/facebook/fb/1%22,%22createMobileUrl%22:%22https://meditor.wix.com/site/add/%22,%22createWebsiteUrl%22:%22https://www.wix.com/create/website/all/all/web%22,%22dashboardServiceUrl%22:%22https://dashboard.wix.com/wix-dashboard%22,%22dashboardUrl%22:%22https://www.wix.com/create/my-account%22,%22developerMode%22:false,%22digitalGoodsServerUrl%22:%22https://dgs.wixapps.net/%22,%22ecommerceCheckoutUrl%22:%22https://www.safer-checkout.com/%22,%22ecommerceStoreManagerUrl%22:%22https://editor.wix.com/ecommerce%22,%22editorAssetsBaseUrl%22:%22https://editorassets.parastorage.com/%22,%22editorServerRoot%22:%22https://editor.wix.com/html/editor/web%22,%22appStudioServerRoot%22:%22https://editor.wix.com/html/app-builder/web%22,%22editorServerRootFB%22:%22https://editor.wix.com/html/editor/fb%22,%22emailServer%22:%22https://assets.wix.com/common-services/notification/invoke%22,%22floggerUrl%22:%22https://frog.wix.com%22,%22helpServer%22:%22https://lc.wix.com/support/main/html5%22,%22htmlEditorRootUrl%22:%22https://editor.wix.com/html/editor%22,%22locationBaseDomain%22:%2296.wix.com%22,%22locationStaticServerRootUrl%22:%22https://static.96.wix.com%22,%22mediaGalleryBaseUrl%22:%22https://editor.wix.com/_partials/media-gallery-ng/0.354.0/%22,%22mediaGalleryBaseUrlB%22:%22https://editor.wix.com/_partials/media-gallery-ng/0.354.0/%22,%22mediaGalleryG5BaseUrl%22:%22https://editor.wix.com/_partials/media-gallery-g5/1.1361.0/%22,%22mediaGalleryG5StaticBaseUrl%22:%22//static.parastorage.com/services/media-gallery-g5/1.1361.0/%22,%22mediaGalleryStaticBaseUrl%22:%22//static.parastorage.com/services/media-gallery-ng/0.354.0/%22,%22mediaGalleryStaticBaseUrlB%22:%22//static.parastorage.com/services/media-gallery-ng/0.354.0/%22,%22mediaManagerUrl%22:%22https://editor.wix.com/_partials/media-gallery-g5/1.1361.0/%22,%22mediaManagerFrameUrl%22:%22https://static.parastorage.com/unpkg-semver/media-frame@%5E1/MediaFrame.bundle.min.js%22,%22mediaRootUrl%22:%22https://static.wixstatic.com/%22,%22mediaServerRoot%22:%22wix.com%22,%22nestedComponentsMapUrl%22:%22%22,%22premiumServerUrl%22:%22https://premium.wix.com%22,%22premiumStateApiUrl%22:%22https://editor.wix.com/_api/wix/getTpaPremiumState%22,%22productionMode%22:true,%22screenshotServiceUrl%22:%22https://screenshoter.wixpress.com/v1/screenshots%22,%22siteMembersUrl%22:%22https://users.wix.com/wix-sm%22,%22staticAudioUrl%22:%22https://music.wixstatic.com/mp3%22,%22staticDocsUrl%22:%22https://docs.wixstatic.com/ugd%22,%22staticMediaUrl%22:%22https://static.wixstatic.com/media%22,%22staticServerFallbackUrl%22:%22https://static.parastorage.com/%22,%22staticServerUrl%22:%22https://static.wix.com/%22,%22staticVideoUrl%22:%22https://video.wixstatic.com/%22,%22wixCloudBaseDomain%22:%22wix-code.com%22,%22wixCloudEditorBaseUrl%22:%22https://editor.wix.com/wix-code-ide-server%22,%22wixCodeIdeServerUrl%22:%22https://code.wix.com/wix-code-ide-server%22,%22wixCodeServiceUrl%22:%22https://code.wix.com/wix-code-service%22,%22wixCloudMonitoringHubUrl%22:%22https://editor.wix.com/_api/cloud-monitoring-hub%22,%22wixCodeMonitoringHubUrl%22:%22https://monitoringhub.wix.com%22,%22staticVideoHeadRequestUrl%22:%22https://storage.googleapis.com/video.wixstatic.com%22,%22wixStoresMigrationServiceUrl%22:%22https://editor.wix.com/_api/wix-ecommerce-migration-web/%22,%22feedbackServiceUrl%22:%22https://editor.wix.com/_api/feedback-server%22,%22salesSystemResolverUrl%22:%22https://editor.wix.com/_api/wix/salesSystemResolver%22,%22dealerUrl%22:%22https://editor.wix.com/_api/wix-dealer-integration-webapp%22,%22mediaUploadServerUrl%22:%22https://files.wix.com/%22,%22adaptiveVideoDomain%22:%22https://files.wix.com/%22,%22userFileDomainUrl%22:%22filesusr.com%22,%22businessManagerUrl%22:%22https://manage.wix.com/dashboard%22,%22linguistUrl%22:%22/_api/linguist%22,%22editorWorkerBaseUrl%22:%22https://editor.wix.com/_partials%22,%22businessManagerDomain%22:%22https://manage.wix.com%22,%22editorRootUrl%22:%22https://editor.wix.com/'>https://static.parastorage.com/services/dealer-client-api/1.1405.0&quot;,&quot;dealer-react-viewer&quot;:&quot;https://static.parastorage.com/services/dealer-react-viewer/1.36.0&quot;,&quot;site-generator-statics-metadata&quot;:&quot;https://static.parastorage.com/services/site-generator-statics-metadata/1.1703.0&quot;,&quot;editor-platform-host-integration&quot;:&quot;https://static.parastorage.com/services/editor-platform-host-integration/1.368.0&quot;,&quot;santa-editor&quot;:&quot;https://static.parastorage.com/services/santa-editor/1.13153.0&quot;,&quot;wix-code-classic-editor&quot;:&quot;https://static.parastorage.com/services/wix-code-classic-editor/1.1279.739&quot;,&quot;wix-code-viewer-app&quot;:&quot;https://static.parastorage.com/services/wix-code-viewer-app/1.1479.228&quot;,&quot;marketplace-component&quot;:&quot;https://static.parastorage.com/services/marketplace-component/1.3729.0&quot;,&quot;react-dealer-viewer&quot;:&quot;https://static.parastorage.com/services/react-dealer-viewer/1.1317.0&quot;,&quot;editor-presets-bundle&quot;:&quot;https://static.parastorage.com/services/editor-presets-bundle/1.147.0&quot;,&quot;dbsm-viewer-app&quot;:&quot;https://static.parastorage.com/services/dbsm-viewer-app/1.3831.0&quot;,&quot;fallback-viewer-app&quot;:&quot;https://static.parastorage.com/services/fallback-viewer-app/1.0.0&quot;,&quot;responsive-editor-common-infra&quot;:&quot;https://static.parastorage.com/services/responsive-editor-common-infra/1.334.0&quot;,&quot;wix-bolt&quot;:&quot;https://static.parastorage.com/services/wix-bolt/1.7492.0&quot;,&quot;dealer-cms-translations&quot;:&quot;https://static.parastorage.com/services/dealer-cms-translations/1.5002.0&quot;,&quot;promote-analytics-adapter&quot;:&quot;https://static.parastorage.com/services/promote-analytics-adapter/2.759.0&quot;,&quot;wix-music-embed&quot;:&quot;https://static.parastorage.com/services/wix-music-embed/1.26.0&quot;,&quot;santa-resources&quot;:&quot;https://static.parastorage.com/services/santa-resources/1.2.0&quot;,&quot;wixapps&quot;:&quot;https://static.parastorage.com/services/wixapps/2.486.0&quot;,&quot;js-platform-editor-sdk&quot;:&quot;https://static.parastorage.com/services/js-platform-editor-sdk/1.1827.0&quot;,&quot;ecommerce&quot;:&quot;https://static.parastorage.com/services/ecommerce/1.203.0&quot;,&quot;advanced-seo-client&quot;:&quot;https://static.parastorage.com/services/advanced-seo-client/1.1910.0&quot;,&quot;dbsm-editor-app&quot;:&quot;https://static.parastorage.com/services/dbsm-editor-app/1.5623.0&quot;,&quot;santa-platform-apps-container&quot;:&quot;https://static.parastorage.com/services/santa-platform-apps-container/1.843.0&quot;,&quot;langs&quot;:&quot;https://static.parastorage.com/services/langs/2.577.0&quot;,&quot;responsive-editor&quot;:&quot;https://static.parastorage.com/services/responsive-editor/1.1939.0&quot;,&quot;semi-native-sdk&quot;:&quot;https://static.parastorage.com/services/semi-native-sdk/1.8.0&quot;,&quot;automation&quot;:&quot;https://static.parastorage.com/services/automation/1.23.0&quot;,&quot;wix-code-editor-app&quot;:&quot;https://static.parastorage.com/services/wix-code-editor-app/1.1667.193&quot;,&quot;wix-thunderbolt&quot;:&quot;https://static.parastorage.com/services/wix-thunderbolt/1.8198.0&quot;,&quot;web&quot;:&quot;https://static.parastorage.com/services/web/2.1229.80&quot;,&quot;sitemembers&quot;:&quot;https://static.parastorage.com/services/sm-js-sdk/1.31.0&quot;,&quot;notifications-widget-component&quot;:&quot;https://static.parastorage.com/services/notifications-widget-component/1.967.0&quot;,&quot;responsive-blocks-packages&quot;:&quot;https://static.parastorage.com/services/responsive-blocks-packages/1.2437.0&quot;,&quot;universal-editor-app&quot;:&quot;https://static.parastorage.com/services/universal-editor-app/1.992.0&quot;,&quot;editor-elements&quot;:&quot;https://static.parastorage.com/services/editor-elements/1.6832.0&quot;,&quot;responsive-editor-migration&quot;:&quot;https://static.parastorage.com/services/responsive-editor-migration/1.91.0&quot;,&quot;tpa&quot;:&quot;https://static.parastorage.com/services/tpa/2.1065.0&quot;,&quot;add-panel-data-classic-editor&quot;:&quot;https://static.parastorage.com/services/add-panel-data-classic-editor/1.650.0&quot;,&quot;wix-code-platform&quot;:&quot;https://static.parastorage.com/services/wix-code-platform/1.964.0&quot;,&quot;responsive-editor-presets-metadata&quot;:&quot;https://static.parastorage.com/services/responsive-editor-presets-metadata/1.1648.0&quot;,&quot;locale-dataset-data&quot;:&quot;https://static.parastorage.com/services/locale-dataset-data/1.2907.0&quot;,&quot;santa&quot;:&quot;https://static.parastorage.com/services/santa/1.11783.0&quot;,&quot;linguist-flags&quot;:&quot;https://static.parastorage.com/services/linguist-flags/1.663.0&quot;,&quot;promote-seo-renderer&quot;:&quot;https://static.parastorage.com/services/promote-seo-renderer/1.2.0&quot;,&quot;skins&quot;:&quot;https://static.parastorage.com/services/skins/2.1229.80&quot;,&quot;santa-site-auth-module&quot;:&quot;https://static.parastorage.com/services/santa-site-auth-module/1.9.0&quot;,&quot;document-management&quot;:&quot;https://static.parastorage.com/services/document-management/1.7079.0&quot;,&quot;responsive-editor-packages&quot;:&quot;https://static.parastorage.com/services/responsive-editor-packages/1.8145.0&quot;,&quot;manage-installed-apps&quot;:&quot;https://static.parastorage.com/services/manage-installed-apps/1.1379.0&quot;,&quot;wixcode-namespaces&quot;:&quot;https://static.parastorage.com/services/wixcode-namespaces/1.934.0&quot;,&quot;media-gallery-g5&quot;:&quot;https://static.parastorage.com/services/media-gallery-g5/1.1361.0&quot;,&quot;core&quot;:&quot;https://static.parastorage.com/services/core/2.1229.80&quot;,&quot;santa-langs&quot;:&quot;https://static.parastorage.com/services/santa-langs/1.11047.0&quot;,&quot;ck-editor&quot;:&quot;https://static.parastorage.com/services/ck-editor/1.87.3&quot;,&quot;wixmp-sdk&quot;:&quot;https://static.parastorage.com/services/wixmp-sdk/1.16.0&quot;,&quot;marketplace-editor-container&quot;:&quot;https://static.parastorage.com/services/marketplace-editor-container/1.2405.103&quot;,&quot;bootstrap&quot;:&quot;https://static.parastorage.com/services/bootstrap/2.1229.80&quot;,&quot;editorx-santa-editor-bridge&quot;:&quot;https://static.parastorage.com/services/editorx-santa-editor-bridge/1.1345.0&quot;,&quot;members-area-app-definitions&quot;:&quot;https://static.parastorage.com/services/members-area-app-definitions/1.464.0&quot;,&quot;js-platform-apps-configuration&quot;:&quot;https://static.parastorage.com/services/js-platform-apps-configuration/1.235.0&quot;,&quot;wix-code-code-editor&quot;:&quot;https://static.parastorage.com/services/wix-code-code-editor/1.794.0&quot;,&quot;wix-ui-santa&quot;:&quot;https://static.parastorage.com/services/wix-ui-santa/1.1697.0&quot;,&quot;blocks-client-viewer-app&quot;:&quot;https://static.parastorage.com/services/blocks-client-viewer-app/1.47.0&quot;,&quot;tpa-gfpp-data&quot;:&quot;https://static.parastorage.com/services/tpa-gfpp-data/1.1002.0&quot;},&quot;scriptsVersionsMap&quot;:{&quot;santa-data-fixer&quot;:&quot;1.1402.0&quot;,&quot;ghostable-structure-builder&quot;:&quot;1.150.0&quot;,&quot;santa-main-r&quot;:&quot;1.100.0&quot;,&quot;simple-all-pages&quot;:&quot;1.0.0&quot;,&quot;remote-widget-assets-wrapper&quot;:&quot;1.5.0&quot;,&quot;remote-widget-structure-builder&quot;:&quot;1.226.0&quot;,&quot;santa-site-metadata&quot;:&quot;1.1880.0&quot;,&quot;stylable-santa-flatten&quot;:&quot;2.0.222&quot;,&quot;ghostable-builder&quot;:&quot;1.3.0&quot;},&quot;serverName&quot;:&quot;wix.com&quot;,&quot;siteAssetsServerUrl&quot;:&quot;https://siteassets.parastorage.com/pages&quot;,&quot;htmlComponentServer&quot;:&quot;https://0.htmlcomponentservice.com&quot;,&quot;staticHTMLComponentUrl&quot;:&quot;https://df0789af-1e58-4920-8bab-6e54fb5a4b6d.filesusr.com/&quot;,&quot;baseDomain&quot;:&quot;wix.com&quot;,&quot;basePublicUrl&quot;:&quot;https://www.wix.com/&quot;,&quot;editorPageStoreUrl&quot;:&quot;https://fallback.wix.com/wix-html-editor-pages-webapp/pageForEditor&quot;,&quot;directStaticServerUrl&quot;:&quot;https://static.96.wix.com/&quot;,&quot;scriptsDomainUrl&quot;:&quot;https://static.parastorage.com/&quot;,&quot;locationStaticServerUrl&quot;:&quot;https://static.96.wix.com/&quot;,&quot;publicPageStoreUrl&quot;:&quot;https://publicorigin.wix.com/wix-public-html-renderer/page&quot;,&quot;publicStaticsUrl&quot;:&quot;//static.parastorage.com/services/wix-public/1.299.0/&quot;,&quot;publicStaticBaseUri&quot;:&quot;//static.parastorage.com/services/wix-public/1.299.0/&quot;,&quot;wixCloudSiteExtensionsServiceUrl&quot;:&quot;https://editor.wix.com/wix-code-service&quot;,&quot;appMarketEditorApiUrl&quot;:&quot;https://editor.wix.com/_api/app-market-api/apps&quot;,&quot;appMarketEditorNewUrl&quot;:&quot;https://editor.wix.com/wix-app-market/editor&quot;,&quot;appMarketEditorUrl&quot;:&quot;https://editor.wix.com/app-market-editor&quot;,&quot;appStoreUrl&quot;:&quot;https://editor.wix.com/wix-apps&quot;,&quot;autoSaveUrl&quot;:&quot;https://editor.wix.com/html/autosave/&quot;,&quot;biServerUrl&quot;:&quot;https://frog.wix.com&quot;,&quot;blobUrl&quot;:&quot;https://static.parastorage.com/wix_blob&quot;,&quot;commonServicesUrl&quot;:&quot;https://api.wix.com/common-services&quot;,&quot;createFacebookUrl&quot;:&quot;https://www.wix.com/create/website/html/facebook/fb/1&quot;,&quot;createMobileUrl&quot;:&quot;https://meditor.wix.com/site/add/&quot;,&quot;createWebsiteUrl&quot;:&quot;https://www.wix.com/create/website/all/all/web&quot;,&quot;dashboardServiceUrl&quot;:&quot;https://dashboard.wix.com/wix-dashboard&quot;,&quot;dashboardUrl&quot;:&quot;https://www.wix.com/create/my-account&quot;,&quot;developerMode&quot;:false,&quot;digitalGoodsServerUrl&quot;:&quot;https://dgs.wixapps.net/&quot;,&quot;ecommerceCheckoutUrl&quot;:&quot;https://www.safer-checkout.com/&quot;,&quot;ecommerceStoreManagerUrl&quot;:&quot;https://editor.wix.com/ecommerce&quot;,&quot;editorAssetsBaseUrl&quot;:&quot;https://editorassets.parastorage.com/&quot;,&quot;editorServerRoot&quot;:&quot;https://editor.wix.com/html/editor/web&quot;,&quot;appStudioServerRoot&quot;:&quot;https://editor.wix.com/html/app-builder/web&quot;,&quot;editorServerRootFB&quot;:&quot;https://editor.wix.com/html/editor/fb&quot;,&quot;emailServer&quot;:&quot;https://assets.wix.com/common-services/notification/invoke&quot;,&quot;floggerUrl&quot;:&quot;https://frog.wix.com&quot;,&quot;helpServer&quot;:&quot;https://lc.wix.com/support/main/html5&quot;,&quot;htmlEditorRootUrl&quot;:&quot;https://editor.wix.com/html/editor&quot;,&quot;locationBaseDomain&quot;:&quot;96.wix.com&quot;,&quot;locationStaticServerRootUrl&quot;:&quot;https://static.96.wix.com&quot;,&quot;mediaGalleryBaseUrl&quot;:&quot;https://editor.wix.com/_partials/media-gallery-ng/0.354.0/&quot;,&quot;mediaGalleryBaseUrlB&quot;:&quot;https://editor.wix.com/_partials/media-gallery-ng/0.354.0/&quot;,&quot;mediaGalleryG5BaseUrl&quot;:&quot;https://editor.wix.com/_partials/media-gallery-g5/1.1361.0/&quot;,&quot;mediaGalleryG5StaticBaseUrl&quot;:&quot;//static.parastorage.com/services/media-gallery-g5/1.1361.0/&quot;,&quot;mediaGalleryStaticBaseUrl&quot;:&quot;//static.parastorage.com/services/media-gallery-ng/0.354.0/&quot;,&quot;mediaGalleryStaticBaseUrlB&quot;:&quot;//static.parastorage.com/services/media-gallery-ng/0.354.0/&quot;,&quot;mediaManagerUrl&quot;:&quot;https://editor.wix.com/_partials/media-gallery-g5/1.1361.0/&quot;,&quot;mediaManagerFrameUrl&quot;:&quot;https://static.parastorage.com/unpkg-semver/media-frame@^1/MediaFrame.bundle.min.js&quot;,&quot;mediaRootUrl&quot;:&quot;https://static.wixstatic.com/&quot;,&quot;mediaServerRoot&quot;:&quot;wix.com&quot;,&quot;nestedComponentsMapUrl&quot;:&quot;&quot;,&quot;premiumServerUrl&quot;:&quot;https://premium.wix.com&quot;,&quot;premiumStateApiUrl&quot;:&quot;https://editor.wix.com/_api/wix/getTpaPremiumState&quot;,&quot;productionMode&quot;:true,&quot;screenshotServiceUrl&quot;:&quot;https://screenshoter.wixpress.com/v1/screenshots&quot;,&quot;siteMembersUrl&quot;:&quot;https://users.wix.com/wix-sm&quot;,&quot;staticAudioUrl&quot;:&quot;https://music.wixstatic.com/mp3&quot;,&quot;staticDocsUrl&quot;:&quot;https://docs.wixstatic.com/ugd&quot;,&quot;staticMediaUrl&quot;:&quot;https://static.wixstatic.com/media&quot;,&quot;staticServerFallbackUrl&quot;:&quot;https://static.parastorage.com/&quot;,&quot;staticServerUrl&quot;:&quot;https://static.wix.com/&quot;,&quot;staticVideoUrl&quot;:&quot;https://video.wixstatic.com/&quot;,&quot;wixCloudBaseDomain&quot;:&quot;wix-code.com&quot;,&quot;wixCloudEditorBaseUrl&quot;:&quot;https://editor.wix.com/wix-code-ide-server&quot;,&quot;wixCodeIdeServerUrl&quot;:&quot;https://code.wix.com/wix-code-ide-server&quot;,&quot;wixCodeServiceUrl&quot;:&quot;https://code.wix.com/wix-code-service&quot;,&quot;wixCloudMonitoringHubUrl&quot;:&quot;https://editor.wix.com/_api/cloud-monitoring-hub&quot;,&quot;wixCodeMonitoringHubUrl&quot;:&quot;https://monitoringhub.wix.com&quot;,&quot;staticVideoHeadRequestUrl&quot;:&quot;https://storage.googleapis.com/video.wixstatic.com&quot;,&quot;wixStoresMigrationServiceUrl&quot;:&quot;https://editor.wix.com/_api/wix-ecommerce-migration-web/&quot;,&quot;feedbackServiceUrl&quot;:&quot;https://editor.wix.com/_api/feedback-server&quot;,&quot;salesSystemResolverUrl&quot;:&quot;https://editor.wix.com/_api/wix/salesSystemResolver&quot;,&quot;dealerUrl&quot;:&quot;https://editor.wix.com/_api/wix-dealer-integration-webapp&quot;,&quot;mediaUploadServerUrl&quot;:&quot;https://files.wix.com/&quot;,&quot;adaptiveVideoDomain&quot;:&quot;https://files.wix.com/&quot;,&quot;userFileDomainUrl&quot;:&quot;filesusr.com&quot;,&quot;businessManagerUrl&quot;:&quot;https://manage.wix.com/dashboard&quot;,&quot;linguistUrl&quot;:&quot;/_api/linguist&quot;,&quot;editorWorkerBaseUrl&quot;:&quot;https://editor.wix.com/_partials&quot;,&quot;businessManagerDomain&quot;:&quot;https://manage.wix.com&quot;,&quot;editorRootUrl&quot;:&quot;https://editor.wix.com/</a>&quot;};<br>
+var debugMode = &quot;nodebug&quot;;<br>
+var siteId = '3fd7b001-a042-42fe-8da1-bf66fc9a8d66';<br>
+var siteHeader =  {&quot;id&quot;:&quot;3fd7b001-a042-42fe-8da1-bf66fc9a8d66&quot;,&quot;userId&quot;:&quot;f4c2280a-7348-4dcf-8205-0fcbfa35314b&quot;,&quot;revision&quot;:6,&quot;version&quot;:1635162643310,&quot;applicationType&quot;:&quot;HtmlWeb&quot;,&quot;documentType&quot;:&quot;document&quot;,&quot;published&quot;:false,&quot;pageIdList&quot;:{&quot;masterPageJsonFileName&quot;:&quot;f4c228_4bbe243efbd5a42d0e502d719d664cdc_6.json&quot;,&quot;topology&quot;:[&quot;https:\/\/static.wix.com\/sites\/{filename}.z?v=3&quot;,&quot;https:\/\/fallback.wix.com\/wix-html-editor-pages-webapp\/pageForEditor\/{filename}?v=3&quot;],&quot;pages&quot;:[{&quot;pageId&quot;:&quot;shuz8&quot;,&quot;title&quot;:&quot;Cart Page&quot;,&quot;pageJsonFileName&quot;:&quot;f4c228_2a015b4f566a1813686309da95ca3a2e_3.json&quot;},{&quot;pageId&quot;:&quot;n8v9t&quot;,&quot;title&quot;:&quot;Thank You Page&quot;,&quot;pageJsonFileName&quot;:&quot;f4c228_31a3768642ca02b745812fd619c6ab8e_3.json&quot;},{&quot;pageId&quot;:&quot;c1dmp&quot;,&quot;title&quot;:&quot;HOME&quot;,&quot;pageJsonFileName&quot;:&quot;f4c228_75b21591bfa43862200353dbe6864253_6.json&quot;},{&quot;pageId&quot;:&quot;iy9co&quot;,&quot;title&quot;:&quot;My Wallet&quot;,&quot;pageJsonFileName&quot;:&quot;f4c228_71925c10585213f4b71c992babf1a8d9_3.json&quot;},{&quot;pageId&quot;:&quot;ekyil&quot;,&quot;title&quot;:&quot;My Addresses&quot;,&quot;pageJsonFileName&quot;:&quot;f4c228_99cdf78444819b2c9184931d89fe9607_3.json&quot;},{&quot;pageId&quot;:&quot;tarbv&quot;,&quot;title&quot;:&quot;Product Page&quot;,&quot;pageJsonFileName&quot;:&quot;f4c228_f21d8d423638e583577a4d5e7904e650_3.json&quot;},{&quot;pageId&quot;:&quot;eidr6&quot;,&quot;title&quot;:&quot;My Orders&quot;,&quot;pageJsonFileName&quot;:&quot;f4c228_31c209e5b4627cbb5a4433ea8567dc37_3.json&quot;},{&quot;pageId&quot;:&quot;yf2cb&quot;,&quot;title&quot;:&quot;Shop&quot;,&quot;pageJsonFileName&quot;:&quot;f4c228_2297b3b19a48bd5d3b2ebd6675b9c0d1_3.json&quot;},{&quot;pageId&quot;:&quot;r3rqm&quot;,&quot;title&quot;:&quot;My Account&quot;,&quot;pageJsonFileName&quot;:&quot;f4c228_23721e2fa7a54e0d8740ad4542679815_3.json&quot;},{&quot;pageId&quot;:&quot;g1oo4&quot;,&quot;title&quot;:&quot;Checkout&quot;,&quot;pageJsonFileName&quot;:&quot;f4c228_c94844843bf7ede7b8c80c2c77a4e2c5_3.json&quot;}]},&quot;originalTemplateId&quot;:&quot;cbf36d3a-49d0-41c2-9482-1bb58d5fdda3&quot;}; ;<br>
+var editorVersionsInfo = {&quot;userOverride&quot;:&quot;none&quot;,&quot;isEligibleForSwitch&quot;:false,&quot;isNewUser&quot;:true};<br>
+var commonConfig = {&quot;brand&quot;:&quot;wix&quot;};        var shiftedFromHtmlToNewEditor = true; </script>  </head>  <body class="jop-noMdConv">  <div id="video-preloader" class="video-preloader jop-noMdConv">  <video id="editor-video-preloader" width="320" height="320" poster="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" loop="" autoplay="" muted="true" class="jop-noMdConv"></video>   // editor assets serving domain<br>
+var videoElement = document.getElementById('editor-video-preloader');<br>
+var devicePixelRatio = window.devicePixelRatio || window.screen.deviceXDPI / window.screen.logicalXDPI;<br>
+var retinaSuffix = devicePixelRatio &gt;= 2 ? &quot;-@2x&quot; : &quot;&quot;;<br>
+var videoVersion = &quot;.v2&quot;;<br>
+videoElement.width = 200;<br>
+videoElement.height = 200;<br>
+videoElement.src = &quot;<a data-from-md title='https://static.parastorage.com/services/santa-resources/resources/editor/preloader/videoPreloader-5' href='https://static.parastorage.com/services/santa-resources/resources/editor/preloader/videoPreloader-5'>https://static.parastorage.com/services/santa-resources/resources/editor/preloader/videoPreloader-5</a>&quot; + retinaSuffix + videoVersion + &quot;.mp4&quot;;<br>
+videoElement.load(); </script>  </div>  <div id="root" class="jop-noMdConv"></div>   var santaBase = '<a data-from-md title='https://static.parastorage.com/services/santa/1.11783.0' href='https://static.parastorage.com/services/santa/1.11783.0'>https://static.parastorage.com/services/santa/1.11783.0</a>';<br>
+var editorBase = '<a data-from-md title='https://static.parastorage.com/services/santa-editor/1.13153.0' href='https://static.parastorage.com/services/santa-editor/1.13153.0'>https://static.parastorage.com/services/santa-editor/1.13153.0</a>';<br>
+var editorVersionSource = 'production'; </script>  </script>  </script>  </script>  </script>  </body>  </html></p>
+</blockquote>
+</div></div>
+					</body>
+				</html>
+			
